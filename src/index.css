@@ -20,6 +20,7 @@ body {
 
 header {
     border: 1px solid #000;
+    height: 6rem;
 }
 
 /* Navigation Section */
@@ -28,10 +29,20 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem rem;
+    height: inherit;
 }
 
 .nav-list {
     display: flex;
-    gap: 1rem;
+    gap: 1.2rem;
 }
 
+.nav-list li {
+    font-size: 1rem;
+}
+
+#logo {
+    font-weight: 300;
+    letter-spacing: .1rem;
+}
