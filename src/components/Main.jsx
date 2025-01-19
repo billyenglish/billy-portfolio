@@ -1,13 +1,17 @@
+import Home from "../subcomponents/Home";
+import About from "../subcomponents/About";
+import Projects from "../subcomponents/Projects";
+import Skills from "../subcomponents/Skills";
+import ContactMe from "../subcomponents/ContactMe";
+
 const Main = () => {
     return (
-        <main className="hero-section">
-            <section>
-                <h2 id="portfolio-author">Billy English</h2>
-
-                <h3 id="career-title">Software Engineer | Front-End Developer</h3>
-
-                <p id="author-heading">Welcome to my portfolio</p>
-            </section>
+        <main>
+            <Home />
+            <About />
+            <Projects />
+            <Skills />
+            <ContactMe />
         </main>
     );
 };
