@@ -1,5 +1,5 @@
 import { FaLinkedin } from "react-icons/fa";
-import { FaGithub, FaMicrosoft, FaPhone } from "react-icons/fa6";
+import { FaGithub, FaMicrosoft, FaMedium } from "react-icons/fa6";
 
 const Home = () => {
     return (
@@ -15,7 +15,7 @@ const Home = () => {
                     <FaLinkedin size={30} />
                     <FaGithub size={30} />
                     <FaMicrosoft size={30} />
-                    <FaPhone />
+                    <FaMedium />
                 </div>
             </div>
         </section>
