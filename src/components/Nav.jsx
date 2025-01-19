@@ -28,7 +28,7 @@ const Nav = () => {
             <header>
                 <nav className="nav-menu">
                     <div className="logo">
-                        <h1 id="logo">B E</h1>
+                        <h1 id="logo">billyenglish</h1>
                     </div>
 
                     <div className="nav-container">
