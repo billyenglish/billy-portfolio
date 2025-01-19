@@ -54,9 +54,14 @@ nav {
 
 /* Main Section */
 
+.section {
+    min-height: 90vh;
+}
+
 .hero-section {
     border: 1px solid #000;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 90vh;
@@ -71,9 +76,9 @@ nav {
 
 #career-title {
     font-size: 1.75rem;
-    font-weight: 200;
+    font-weight: 275;
     text-align: center;
-    padding-bottom: .5rem;
+    padding-bottom: 1rem;
 }
 
 #author-heading {
