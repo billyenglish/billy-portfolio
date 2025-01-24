@@ -1,3 +1,6 @@
+import { FaLinkedin, FaGithub, FaEnvelopeSquare } from "react-icons/fa";
+import { Link } from "react-router-dom";
+
 const Home = () => {
     return (
         <section className="section home-section">
@@ -11,6 +14,12 @@ const Home = () => {
 
                 <p className="author-introduction">
                 </p>
+            </div>
+
+            <div className="my-links">
+                <Link to="/"><FaLinkedin size={50} /></Link>
+                <Link to="/"><FaGithub size={50} /></Link>
+                <Link to="/"><FaEnvelopeSquare size={50} /></Link>
             </div>
         </section>
     )
