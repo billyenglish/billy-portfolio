@@ -1,13 +1,13 @@
 const Nav = () => {
     return (
         <header>
-            <nav>
+            <nav className="nav-menu">
                 <div>
-                    <h1 id="logo">billyenglish</h1>
+                    <h1 id="logo">billy english</h1>
                 </div>
 
-                <div>
-                    <ul className="nav-list">
+                <div className="nav-menu-list">
+                    <ul className="nav-list mobile-list">
                         <li className="nav-item"><a href="#">Home</a></li>
                         <li className="nav-item"><a href="#">About</a></li>
                         <li className="nav-item"><a href="#">Projects</a></li>

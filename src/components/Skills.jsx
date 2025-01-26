@@ -1,23 +1,16 @@
-import { FaHtml5, FaCss3Alt, FaJs } from "react-icons/fa";
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa";
+import { FaJs } from "react-icons/fa";
 
 const Skills = () => {
     return (
-        <section className="section">
-            <h2 className="section-title">Skills</h2>
+        <section className="section section-skills">
+            <h2 className="skills-section">My Skills</h2>
 
-            <div>
-                <div className="skills-container">
-                    <FaHtml5 size={44} />
-                    <p>HTML</p>
-                </div>
-                <div className="skills-container">
-                    <FaCss3Alt size={44} />
-                    <p>CSS</p>
-                </div>
-                <div className="skills-container">
-                    <FaJs size={44} />
-                    <p>JavaScript</p>
-                </div>
+            <div className="skills-container">
+                <FaHtml5 size={30} />
+                <FaCss3Alt size={30} />
+                <FaJs size={30} />
             </div>
         </section>
     )
