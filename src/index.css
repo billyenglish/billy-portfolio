@@ -1,68 +1,95 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+html, body {
+  font-family: "DM Sans", Arial, Helvetica, sans-serif;
 }
 
 body {
-  margin: 0;
+  font-size: 62.5%;
+}
+
+/* Header Section */
+
+header {
+  height: 6rem;
+}
+
+/* Navigation Menu */
+
+nav {
+  height: inherit;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: space-between;
+  padding: 0 3rem;
+  align-items: center;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+#logo {
+  text-transform: lowercase;
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.nav-list {
+  display: flex;
+  gap: 1.1rem;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+.nav-items {
+  font-size: 1.3rem;
+  font-weight: 400;
+  transition: transform .2s 0.25s;
+}
+
+/* Main Section */
+
+section {
+  height: 100vh;
+  border: 1px solid #000;
+}
+
+.author-title {
+  font-size: 10rem;
+  font-weight: 300;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  margin: 13rem 0 0 3rem;
+  animation-name: authorName;
+  position: relative;
+}
+
+@keyframes authorName {
+  0% {
+    margin-left: 2rem;
   }
-  a:hover {
-    color: #747bff;
+
+  25% {
+
   }
-  button {
-    background-color: #f9f9f9;
+
+  50% {
+
   }
+
+  75% {
+
+  }
+
+  100% {
+
+  }
+}
+
+.professional-title {
+  font-size: 3rem;
+  font-weight: 200;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  margin: 4rem 0 0 6rem;
 }
