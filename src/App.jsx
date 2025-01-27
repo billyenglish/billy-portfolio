@@ -1,9 +1,7 @@
-import Portfolio from "./components/Porfolio";
-
 function App() {
   return (
     <>
-      <Portfolio />
+      <h1>Hello World</h1>
     </>
   )
 }
