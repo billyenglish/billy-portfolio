@@ -1,46 +1,35 @@
-const navMenu = [
-    {
-        navTitle: "Home",
-        navKey: "navHome"
-    },
-    {
-        navTitle: "About",
-        navKey: "navAbout",
-    },
-    {
-        navTitle: "Project",
-        navKey: "navProject"
-    },
-    {
-        navTitle: "Skills",
-        navKey: "navSkills"
-    },
-    {
-        navTitle: "Contact Me",
-        navKey: "navContact"
-    }
+import React from 'react';
+import { GiHamburgerMenu } from 'react-icons/gi';
+
+const navLinks = [
+    {linkName: "Home", id: 0},
+    {linkName: "About", id: 1},
+    {linkName: "Skills", id: 2},
+    {linkName: "Projects", id: 3},
+    {linkName: "Contact", id: 4},
 ];
 
 const Nav = () => {
     return (
-        <header>
-            <nav>
-                <div className="logo-container">
-                    <h1 id="logo">billy.io</h1>
-                </div>
+        <nav className="nav-container">
+            <div className="nav-logo-container">
+                <h1 className="nav-logo">Billy E</h1>
+                <p className="professional-logo">Software Engineer</p>
+            </div>
 
-                <div className="nav-list-container">
-                    <ul className="nav-list">
-                        {navMenu.map((navItems) => {
-                            return <li key={navItems.navKey} className="nav-items">
-                                {navItems.navTitle}
-                            </li>
-                        })}
-                    </ul>
-                </div>
-            </nav>
-        </header>
-    )
-}
+            <div className="nav-list-container">
+                <ul className="nav-list">
+                    {navLinks.map((link) => {
+                        return <li key={link.id}>{link.linkName}</li> 
+                    })}
+                </ul>
+            </div>
+
+            <div className="ham-menu" onClick={() => alert("Hello World")}>
+                <GiHamburgerMenu className="ham-icon" />
+            </div>
+        </nav>
+    );
+};
 
 export default Nav;
