@@ -81,7 +81,7 @@ const Skills = () => {
                 </div>
 
                 <div className="software-skills">
-                    <h4 className="my-skill">Software</h4>
+                    <h4 className="my-skill">Software Tools</h4>
 
 
                     <div className="skill-cards-container">
