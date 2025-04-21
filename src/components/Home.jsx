@@ -41,13 +41,15 @@ const Home = () => {
 
             <div className="light-dark-mode-container">
                 <div className="lightmode-container">
-                    <input type="checkbox" />
-                    <p>Light Mode</p>
+                    <button>
+                        Light Mode
+                    </button>
                 </div>
 
                 <div className="darkmode-container">
-                    <input type="checkbox" />
-                    <p>Dark Mode</p>
+                    <button>
+                        Dark Mode
+                    </button>
                 </div>
             </div>
 
