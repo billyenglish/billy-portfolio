@@ -43,6 +43,7 @@ nav {
 
 .nav-list-container.active {
     display: block;
+    transition: all 1s ease;
 }
 
 .nav-list {
@@ -50,6 +51,14 @@ nav {
     flex-direction: column;
     font-size: 1.5rem;
     gap: 2rem;
+}
+
+.nav-list a {
+    transition: transform 0.5s ease;
+}
+
+.nav-list a:hover {
+    transform: scale(1.5);
 }
 
 .nav-logo-container {
@@ -65,13 +74,18 @@ nav {
 
 .professional-logo {
     font-size: 1.25rem;
-    font-weight: 300;;
+    font-weight: 300;
 }
 
 .ham-menu {
     font-size: 1.5rem;
     font-weight: 300;
     cursor: pointer;
+}
+
+.ham-menu:hover {
+    transform: scale(1.5) rotateY(180deg);
+    transition: all 0.5s ease;
 }
 
 /* Content Section */
@@ -145,8 +159,12 @@ section {
     gap: .25rem;
 }
 
-.lightmode-container input, .darkmode-container input {
+.lightmode-container button, .darkmode-container button {
+    font-size: 1rem;
+    font-weight: 350;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
     cursor: pointer;
+    padding: .1rem;
 }
 
 .current-time-container {
@@ -259,6 +277,12 @@ section {
     align-items: center;
 }
 
+.skill-card:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
 .skill-icon {
     font-size: 3rem;
 }
@@ -271,6 +295,48 @@ section {
 /* Projects Section */
 
 /* Contact Section */
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name-input, .email-input {
+    height: 2.5rem;
+    width: 20rem;
+}
+
+.name-input::placeholder, .email-input::placeholder {
+    font-size: 1.5rem;
+    font-weight: 100;
+    display: flex;
+    color: #000
+}
+
+textarea {
+    height: 10rem;
+    width: 20rem;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+textarea::placeholder {
+    font-size: 1.5rem;
+    font-weight: 300;
+    display: flex;
+    color: #000;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+}
 
 /* Footer Section */
 
@@ -294,7 +360,7 @@ footer {
 
 .copyright {
     font-size: 1.25rem;
-    font-weight: 300;
+    font-weight: 600;
 }
 
 .footer-section-left {
