@@ -30,6 +30,11 @@ const Contact = () => {
                     placeholder="Message"
                     className="message-input"
                 ></textarea>
+
+                <div className="form-buttons-container">
+                    <button>Submit</button>
+                    <button>Reset</button>
+                </div>
             </form>
         </section>
     );
