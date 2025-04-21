@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     list-style-type: none;
+    text-decoration: none;
 }
 
 html, body {
@@ -33,7 +34,22 @@ nav {
 }
 
 .nav-list-container {
-    display: none;
+    display: none;;
+    z-index: 2;
+    position: absolute;
+    top: 8rem;
+    right: 6rem;
+}
+
+.nav-list-container.active {
+    display: block;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    gap: 2rem;
 }
 
 .nav-logo-container {
