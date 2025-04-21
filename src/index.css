@@ -294,6 +294,10 @@ section {
 
 /* Projects Section */
 
+.projects-section {
+    border: 1px solid #000;
+}
+
 /* Contact Section */
 
 form {
@@ -303,6 +307,8 @@ form {
     justify-content: center;
     gap: 1rem;
     font-family: Poppins, Arial, Helvetica, sans-serif;
+    margin: 8rem 0 0 0;
+    max-width: 24rem;
 }
 
 .contact-section {
@@ -311,23 +317,26 @@ form {
     align-items: center;
 }
 
-.name-input, .email-input {
+.name-input, .email-input, .subject-input {
     height: 2.5rem;
-    width: 20rem;
+    width: 24rem;
 }
 
-.name-input::placeholder, .email-input::placeholder {
+.name-input::placeholder, .email-input::placeholder, .subject-input::placeholder, .message-input::placeholder {
     font-size: 1.5rem;
     font-weight: 100;
     display: flex;
-    color: #000
+    color: #000;
 }
 
 textarea {
-    height: 10rem;
-    width: 20rem;
+    height: 14rem;
+    width: 24rem;
     font-size: 1.5rem;
     font-weight: 100;
+    resize: none;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
 }
 
 textarea::placeholder {
@@ -336,6 +345,21 @@ textarea::placeholder {
     display: flex;
     color: #000;
     font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+.form-buttons-container {
+    display: flex;
+    gap: 12rem;
+}
+
+.form-buttons-container button {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+    cursor: pointer;
+    padding: .1rem;
+    margin-top: 1rem;
+    width: 5rem;
 }
 
 /* Footer Section */
@@ -381,7 +405,7 @@ footer {
     gap: .25rem;
     justify-content: center;
     align-self: center;
-    left: 40%;
+    left: 42%;
     font-size: .7rem;
 }
 
