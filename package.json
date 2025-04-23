@@ -1,6 +1,6 @@
 {
   "name": "portfolio-website",
-  "": "https://billyenglish.github.io/billyenglish",
+  "website": "https://billyenglish.github.io/billyenglish",
   "private": true,
   "version": "0.0.0",
   "type": "module",
