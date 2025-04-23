@@ -16,7 +16,6 @@ html, body {
 body {
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-size: 62.8%;
-    border: 1px solid #000;
     min-width: 100%;
     z-index: 1;
 }
@@ -31,7 +30,6 @@ nav {
     padding: 0 2rem;
     position: fixed;
     min-width: 100%;
-    border: 1px solid #000;
 }
 
 .nav-list-container {
@@ -200,7 +198,6 @@ section {
 /* Footer Section */
 
 footer {
-    border: 1px solid #000;
     height: 4rem;
     display: flex;
     align-items: center;
