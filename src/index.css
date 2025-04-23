@@ -240,7 +240,6 @@ footer {
     align-items: center;
     gap: .25rem;
     justify-content: center;
-    border: 1px solid #000;
     align-self: center;
     left: 40%;
 }
