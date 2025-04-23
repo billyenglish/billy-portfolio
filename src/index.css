@@ -179,7 +179,6 @@ section {
 /* About Me Section */
 
 .about-me-section {
-    border: 1px solid #000;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
@@ -278,7 +277,6 @@ section {
 }
 
 .skill-card {
-    border: 1px solid #000;
     height: 6rem;
     width: 6rem;
     display: flex;
@@ -310,66 +308,54 @@ section {
 
 /* Contact Section */
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    font-family: Poppins, Arial, Helvetica, sans-serif;
-    margin: 8rem 0 0 0;
-    max-width: 24rem;
-}
-
 .contact-section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
-.name-input, .email-input, .subject-input {
-    height: 2.5rem;
-    width: 24rem;
-}
-
-.name-input::placeholder, .email-input::placeholder, .subject-input::placeholder, .message-input::placeholder {
-    font-size: 1.5rem;
-    font-weight: 100;
+form {
     display: flex;
-    color: #000;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input[type=text],
+input[type=email] {
+    height: 2.5rem;
+    width: 26rem;
+}
+
+input[type=text]::placeholder,
+input[type=email]::placeholder,
+textarea::placeholder {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 300;
 }
 
 textarea {
     height: 14rem;
-    width: 24rem;
-    font-size: 1.5rem;
-    font-weight: 100;
+    width: 26rem;
     resize: none;
-    overflow-y: hidden;
-    scroll-behavior: smooth;
 }
 
-textarea::placeholder {
-    font-size: 1.5rem;
-    font-weight: 300;
+.form-control-panel {
     display: flex;
-    color: #000;
-    font-family: Poppins, Arial, Helvetica, sans-serif;
+    justify-content: center;
+    width: 100%;
+    gap: 16.5rem;
 }
 
-.form-buttons-container {
-    display: flex;
-    gap: 12rem;
-}
-
-.form-buttons-container button {
+.form-control-panel button {
     font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-size: 1.1rem;
-    font-weight: 300;
-    cursor: pointer;
+    font-size: 1.2rem;
     padding: .1rem;
-    margin-top: 1rem;
-    width: 5rem;
+}
+
+.form-control-panel button:hover {
+    cursor: pointer;
 }
 
 /* Footer Section */
