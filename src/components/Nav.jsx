@@ -31,7 +31,7 @@ const Nav = () => {
     return (
         <nav className="nav-container">
             <div className="nav-logo-container">
-                <h1 className="nav-logo">Billy E</h1>
+                <h1 className="nav-logo">Billy</h1>
                 <p className="professional-logo">Software Engineer</p>
             </div>
 
