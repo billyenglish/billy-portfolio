@@ -1,4 +1,7 @@
+import React from "react";
+import { AnimatedBackground } from 'animated-backgrounds';
 import './App.css'
+import './media_queries/small_screen.css';
 import Nav from "./components/Nav";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -11,6 +14,10 @@ function App() {
 
   return (
     <>
+      <AnimatedBackground
+        animationName="matrixRain"
+        blendMode="soft-light"
+      />
       <Nav />
       <Home />
       <About />
