@@ -8,6 +8,12 @@
     text-decoration: none;
 }
 
+:root {
+    --primary-color: #030303;
+    --secondary-color-1: #1CA152;
+    --secondary-color-2: #F5F5F5;
+}
+
 html, body {
     scroll-behavior: smooth;
 }
@@ -16,9 +22,10 @@ html, body {
 
 body {
     font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-size: 62.8%;
+    font-size: 62.5%;
     min-width: 100%;
     z-index: 1;
+    color: #fff;
 }
 
 /* Navigation Section */
@@ -31,11 +38,19 @@ nav {
     padding: 0 2rem;
     position: fixed;
     min-width: 100%;
-    z-index: 1;
+    z-index: 10;
+    background-color: #030303;
+    opacity: .8;
+    color: #1CA152;
+}
+
+nav:hover {
+    transform: scale(1.01);
+    transition: 1ms ease-in-out all;
 }
 
 .nav-list-container {
-    display: none;;
+    display: none;
     z-index: 2;
     position: absolute;
     top: 8rem;
@@ -304,7 +319,80 @@ section {
 
 .projects-section {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #000;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 350;
+    margin: 4rem 0;
+    text-align: center;
+}
+
+.project-container {
+    display: flex;
+    gap: 4rem;
     justify-content: center;
+    margin: 4rem 0 0 0;
+}
+
+.project-card {
+    border: 1px solid #FFF;
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+    width: 18rem;
+    border-radius: .25rem;
+}
+
+.project-card:hover {
+    transform: scale(1.1);
+    transition: 2ms ease-in-out all;
+}
+
+.project-images {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-title {
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: .5rem;
+}
+
+.project-details {
+    height: 10rem;
+    padding: .5rem;
+}
+
+.project-description {
+    font-size: .8rem;
+    font-weight: 350;
+    line-height: 1.25rem;
+}
+
+.project-card-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 .5rem;
+    height: 5rem;
+    margin-top: 1rem;
+}
+
+.project-icon {
+    font-size: 2.5rem;
+    align-self: center;
+}
+
+.project-card-controls button {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    padding: .25rem;
 }
 
 /* Contact Section */
@@ -372,6 +460,9 @@ footer {
     gap: 1rem;
     width: 100%;
     padding: 0 3rem;
+    color: #1CA152;
+    background-color: #030303;
+    opacity: .8;
 }
 
 .footer-container {
