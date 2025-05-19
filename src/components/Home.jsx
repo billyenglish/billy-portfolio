@@ -1,4 +1,3 @@
-import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FaEnvelope } from 'react-icons/fa';
@@ -7,6 +6,36 @@ import { useState, useEffect } from 'react';
 const Home = () => {
 
     const [currentTime, setCurrentTime] = useState(new Date());
+    const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+    useEffect(() => {
+
+        const currentMousePosition = (e) => {
+            setMousePosition({
+                x: e.clientX,
+                y: e.clientY
+            });
+        }
+
+
+        window.addEventListener('mousemove', currentMousePosition);
+        return (() => {
+            window.removeEventListener('mousemove', currentMousePosition);
+        });
+    }, []);
+
+    const mouseTracker = {
+        position: 'fixed',
+        top: mousePosition.y,
+        left: mousePosition.x,
+        transform: 'translate(-50%, -50%)', // centers the element on the cursor
+        width: '20px',
+        height: '20px',
+        backgroundColor: 'blue',
+        borderRadius: '50%',
+        pointerEvents: 'none', // ensures it doesn't block mouse interactions
+        zIndex: 1000,
+    }
 
     useEffect(() => {
         const currentTimeInterval = setInterval(() => {
@@ -23,8 +52,8 @@ const Home = () => {
             second: '2-digit',
             hour12: true,
             timeZone: 'America/New_York',
-        })
-    }
+        });
+    };
 
     return (
         <section className="home-section">
@@ -33,9 +62,9 @@ const Home = () => {
 
             <div className="contact-menu">
                 <ul className="contact-list">
-                    <li><a href="/"><FontAwesomeIcon icon={faLinkedin}/></a></li>
-                    <li><a href="/"><FontAwesomeIcon icon={faGithub} /></a></li>
-                    <li><a href="/"><FaEnvelope /></a></li>
+                    <li className='list-item'><a href="/"><FontAwesomeIcon icon={faLinkedin}/></a></li>
+                    <li className='list-item'><a href="/"><FontAwesomeIcon icon={faGithub} /></a></li>
+                    <li className="list-item"><a href="/"><FaEnvelope /></a></li>
                 </ul>
             </div>
 
