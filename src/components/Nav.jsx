@@ -38,7 +38,7 @@ const Nav = () => {
             <div className={`nav-list-container ${openMenu ? "active" : ""}`}>
                 <ul className="nav-list">
                     {navLinks.map((link) => {
-                        return <li key={link.id}><a href="/">{link.linkName}</a></li> 
+                        return <li className="nav-items" key={link.id}><a href="/">{link.linkName}</a></li> 
                     })}
                 </ul>
             </div>
