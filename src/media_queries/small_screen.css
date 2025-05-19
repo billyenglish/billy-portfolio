@@ -1,6 +1,6 @@
 :root {
     --section-title-font: 1.75rem;
-    --section-title-font-weight: 200rem;
+    --section-title-font-weight: 300;
     --section-title-font-spacing: .2rem;
 }
 
@@ -34,6 +34,7 @@
         font-size: var(--section-title-font);
         font-weight: var(--section-title-font-weight);
         letter-spacing: var(--section-title-font-spacing);
+        padding: 1rem 0;
     }
 
     .about-me-image-container {
@@ -43,6 +44,7 @@
 
     .about-me-introduction {
         font-size: 1rem;
+        font-weight: 300;
         line-height: 2.25rem;
         margin: 0;
         margin-bottom: 3rem;
@@ -54,7 +56,7 @@
     /* Skill Section */
 
     .skills-section {
-        height: 300vh;
+        height: 280vh;
         padding: 2rem 0;
         border: 1px solid #000;
     }
@@ -62,6 +64,7 @@
     .section-title {
         font-size: var(--section-title-font);
         font-weight: var(--section-title-font-weight);
+        letter-spacing: var(--section-title-font-spacing);
     }
 
     .skills-container {
@@ -106,6 +109,33 @@
     .skill-title {
         font-size: 1.1rem;
         font-weight: 350;
+    }
+
+    /* Project Section */
+
+    .projects-section {
+        height: 240vh;
+    }
+
+    .project-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Footer Section */
+
+    footer {
+        border: 1px solid #000;
+        height: 10rem;
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
     }
 
 }
