@@ -1,6 +1,7 @@
 const Contact = () => {
     return (
-        <section className="contact-section" id="contact">``
+
+        <section className="contact-section" id="contact">
             <h3 className="section-title">Contact</h3>
 
             <form>
