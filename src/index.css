@@ -14,6 +14,10 @@
     --secondary-color-2: #F5F5F5;
 }
 
+::-webkit-scrollbar-track {
+  background: red;
+}
+
 html, body {
     scroll-behavior: smooth;
 }
@@ -25,7 +29,7 @@ body {
     font-size: 62.5%;
     min-width: 100%;
     z-index: 1;
-    color: #fff;
+    color: var(--secondary-color-1);
 }
 
 /* Navigation Section */
@@ -101,7 +105,26 @@ nav:hover {
 
 .ham-menu:hover {
     transform: scale(1.5) rotateX(360deg) rotateY(360deg);
-    transition: all 0.5s ease;
+    transition: 1ms ease-in-out all;
+}
+
+.nav-list {
+    width: 20rem;
+    position: absolute;
+    left: -14rem;
+    top: -4rem;
+    height: 30rem;
+    width: 20rem;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--primary-color);
+    opacity: .7;
+}
+
+.nav-items a {
+    color: var(--secondary-color-1);
 }
 
 /* Content Section */
@@ -123,6 +146,7 @@ section {
 .author-name {
     font-size: 5rem;
     font-weight: 250;
+    color: var(--secondary-color-1);
 }
 
 .professional-title {
@@ -131,6 +155,7 @@ section {
     margin: 1rem 0;
     text-align: center;
     letter-spacing: .5rem;
+    color: var(--secondary-color-1);
 }
 
 .contact-menu {
@@ -138,6 +163,10 @@ section {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+.list-item a {
+    color: var(--secondary-color-1);
 }
 
 .contact-list {
@@ -176,11 +205,15 @@ section {
 }
 
 .lightmode-container button, .darkmode-container button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color-1);
     font-size: 1rem;
     font-weight: 350;
     font-family: Poppins, Arial, Helvetica, sans-serif;
     cursor: pointer;
-    padding: .1rem;
+    padding: .2rem .4rem;
+    border-radius: .25rem;
+    border-color: var(--secondary-color-1);
 }
 
 .current-time-container {
@@ -189,6 +222,7 @@ section {
     z-index: 2;
     bottom: 1rem;
     right: 12rem;
+    color: var(--secondary-color-1);
 }
 
 /* About Me Section */
@@ -217,6 +251,7 @@ section {
     font-size: 2rem;
     font-weight: 350;
     margin-bottom: 2.5rem;
+    color: var(--secondary-color-1);
 }
 
 .about-me-image-container {
@@ -245,6 +280,7 @@ section {
     line-height: 2.5rem;
     margin-right: 2rem;
     margin-top: 5rem;
+    color: var(--secondary-color-1);
 }
 
 .about-me-introduction:hover {
@@ -265,6 +301,7 @@ section {
     font-weight: 350;
     margin: 4rem 0;
     text-align: center;
+    color: var(--secondary-color-1);
 }
 
 .skills-container {
@@ -279,6 +316,7 @@ section {
     font-size: 1.5rem;
     font-weight: 300;
     text-align: center;
+    color: var(--secondary-color-1);
 }
 
 .skill-cards-container {
@@ -308,11 +346,13 @@ section {
 
 .skill-icon {
     font-size: 3rem;
+    color: var(--secondary-color-1);
 }
 
 .skill-title {
     font-size: 1rem;
     font-weight: 300;
+    color: var(--secondary-color-1);
 }
 
 /* Projects Section */
@@ -321,7 +361,6 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid #000;
 }
 
 .section-title {
@@ -339,7 +378,7 @@ section {
 }
 
 .project-card {
-    border: 1px solid #FFF;
+    border: 1px solid var(--secondary-color-1);
     display: flex;
     flex-direction: column;
     height: 30rem;
@@ -362,6 +401,7 @@ section {
     font-size: 1.2rem;
     font-weight: 400;
     padding: .5rem;
+    color: var(--secondary-color-1);
 }
 
 .project-details {
@@ -373,6 +413,7 @@ section {
     font-size: .8rem;
     font-weight: 350;
     line-height: 1.25rem;
+    color: var(--secondary-color-1);
 }
 
 .project-card-controls {
@@ -387,12 +428,16 @@ section {
 .project-icon {
     font-size: 2.5rem;
     align-self: center;
+    color: var(--secondary-color-1);
 }
 
 .project-card-controls button {
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-weight: 300;
     padding: .25rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color-1);
+    border-color: var(--secondary-color-1);
 }
 
 /* Contact Section */
