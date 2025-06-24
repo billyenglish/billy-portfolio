@@ -1,0 +1,35 @@
+@media screen and (max-width: 600px) {
+
+    .about-title {
+        font-size: 2.5rem;
+        font-weight: 400;
+    }
+
+    .about-me-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-me-container {
+        margin: 0;
+    }
+
+    .image-container {
+        height: auto;
+        width: 20rem;
+    }
+
+    .about-intro {
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 4.5rem;
+        text-align: center;
+    }
+
+    .about-paragraph {
+        font-size: 1.4rem;
+        line-height: 3rem;
+        margin: 2rem 0 0 0;
+        font-weight: 400;
+    }
+
+}

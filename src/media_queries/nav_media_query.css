@@ -1,0 +1,18 @@
+@media screen and (max-width: 600px) {
+
+    nav {
+        padding: 3rem 5rem;
+        justify-content: space-between;
+    }
+
+    .nav-desktop-container {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        cursor: pointer;
+        font-size: 2rem;
+    }
+
+}

@@ -1,0 +1,67 @@
+@media screen and (max-width: 600px) {
+
+    .home-container {
+        gap: 1.5rem;
+    }
+
+    .home-title {
+        font-size: 1.75rem;
+    }
+
+    .home-description {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    .learn-more-btn {
+        font-size: 1.25rem;
+    }
+
+    .contact-item {
+        font-size: 1.1rem;
+        margin: 1.5rem 0 0 0;
+    }
+
+    .border-left-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 5;
+        position: absolute;
+        transform: rotate(90deg);
+        left: -14rem;
+        top: 50%;
+        gap: 1rem;
+    }
+
+    .border-right-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 5;
+        position: absolute;
+        transform: rotate(-90deg);
+        right: -14rem;
+        top: 50%;
+        gap: 1rem;
+    }
+
+    .left-border {
+        border: .8px solid #000;
+        width: 16rem;
+        animation: left-border-anime .4s ease-in forwards;
+    }
+
+    .right-border {
+        border: .8px solid #000;
+        width: 16rem;
+        animation: right-border-anime .4s ease-in forwards;
+    }
+
+    .scroll-down-container {
+        font-size: 1.25rem;
+        padding: 2.5px;
+        bottom: 3rem;
+    }
+
+}
