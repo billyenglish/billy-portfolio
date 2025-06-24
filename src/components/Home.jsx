@@ -1,92 +1,63 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { FaEnvelope } from 'react-icons/fa';
-import { useState, useEffect } from 'react';
+import "../assets/styles/home.css";
+import "../media_queries/home_media_query.css";
+import Button from "../subcomponents/Button";
+import { HiArrowRight } from 'react-icons/hi';
+import { IoMdArrowDown } from 'react-icons/io';
+
+const contactItems = [
+    { contactName: "LinkedIn", id: 1 },
+    { contactName: "GitHub", id: 2 },
+    { contactName: "Email", id: 3 }
+];
 
 const Home = () => {
 
-    const [currentTime, setCurrentTime] = useState(new Date());
-    const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-
-    useEffect(() => {
-
-        const currentMousePosition = (e) => {
-            setMousePosition({
-                x: e.clientX,
-                y: e.clientY
-            });
-        }
-
-
-        window.addEventListener('mousemove', currentMousePosition);
-        return (() => {
-            window.removeEventListener('mousemove', currentMousePosition);
-        });
-    }, []);
-
-    const mouseTracker = {
-        position: 'fixed',
-        top: mousePosition.y,
-        left: mousePosition.x,
-        transform: 'translate(-50%, -50%)', // centers the element on the cursor
-        width: '20px',
-        height: '20px',
-        backgroundColor: 'blue',
-        borderRadius: '50%',
-        pointerEvents: 'none', // ensures it doesn't block mouse interactions
-        zIndex: 1000,
-    }
-
-    useEffect(() => {
-        const currentTimeInterval = setInterval(() => {
-            setCurrentTime(new Date());
-        }, 1000);
-
-        return () => clearInterval(currentTimeInterval);
-    }, []);
-
-    const currentTimeFormat = (currentTime) => {
-        return currentTime.toLocaleTimeString([], {
-            hour: '2-digit',
-            minute: '2-digit',
-            second: '2-digit',
-            hour12: true,
-            timeZone: 'America/New_York',
-        });
-    };
-
     return (
-        <section className="home-section">
-            <h2 className="author-name">Billy English</h2>
-            <h4 className="professional-title">Software Engineer</h4>
+        <section className="home-section" id="home-section">
+            <div className="home-container">
+                <h2 className="home-title">
+                    Hi, I&apos;m Billy — a Software Engineer who builds with purpose.
+                </h2>
+                <p className="home-description">
+                   I enjoy crafting clean, responsive front-ends with React and TypeScript, and I’m just as comfortable working with Node.js, APIs, and databases. I bring a problem-solving mindset shaped by real-world experience at Twitter and a passion for continuous learning.
+                </p>
 
-            <div className="contact-menu">
-                <ul className="contact-list">
-                    <li className='list-item'><a href="/"><FontAwesomeIcon icon={faLinkedin}/></a></li>
-                    <li className='list-item'><a href="/"><FontAwesomeIcon icon={faGithub} /></a></li>
-                    <li className="list-item"><a href="/"><FaEnvelope /></a></li>
-                </ul>
-            </div>
-
-            <div className="light-dark-mode-container">
-                <div className="lightmode-container">
-                    <button onClick={() => alert("Light Mode!")}>
-                        Light Mode
+                <div className="home-btn-container">
+                    <button className="learn-more-btn">
+                        <HiArrowRight size={18} />
+                        Learn More
                     </button>
                 </div>
 
-                <div className="darkmode-container">
-                    <button onClick={() => alert("Dark Mode!")}>
-                        Dark Mode
-                    </button>
+                <div className="contact-container">
+                    <ul className="contact-list">
+                       {contactItems.map((item) => (
+                            <li className='contact-item' key={item.id}>
+                                <a className="contact-link">{item.contactName}</a>
+                            </li>
+                       ))}
+                    </ul>
+                </div>
+
+                <div className="border-left-container">
+                    <hr className="left-border" />
+                    <p className="border-logo">Billy</p>
+                    <hr className="left-border" />
+                </div>
+
+                <div className="border-right-container">
+                    <hr className="right-border" />
+                    <p className="border-logo">Billy</p>
+                    <hr className="right-border" />
                 </div>
             </div>
 
-            <div className="current-time-container">
-                {currentTimeFormat(currentTime)}
-            </div>
+            <Button
+                className="scroll-down-container"
+                content={<IoMdArrowDown size={24} />}
+            />
         </section>
     );
-};
+}
 
 export default Home;

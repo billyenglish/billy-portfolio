@@ -1,53 +1,63 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { faXmark } from '@fortawesome/free-solid-svg-icons';
-import { useState } from 'react';
-
-const navLinks = [
-    {linkName: "Home", id: 0},
-    {linkName: "About", id: 1},
-    {linkName: "Skills", id: 2},
-    {linkName: "Projects", id: 3},
-    {linkName: "Contact", id: 4},
-];
+import "../assets/styles/nav.css";
+import "../media_queries/nav_media_query.css";
+import { FaBars, FaCode } from 'react-icons/fa';
+import { MdOutlineLightMode } from "react-icons/md";
 
 const Nav = () => {
 
-    const [openMenu, setOpenMenu] = useState(false);
-
-    const handleMenuToggle = () => {
-
-        if (openMenu) {
-            console.log("Menu closed");
-        } else {
-            console.log("Menu opened");
+    const navItems = [
+        {
+            name: "Home",
+            id: 1
+        },
+        {
+            name: "About",
+            id: 2
+        },
+        {
+            name: "Projects",
+            id: 3
+        },
+        {
+            name: "Skills",
+            id: 4
+        },
+        {
+            name: "Contact",
+            id: 5
         }
-
-        setOpenMenu(!openMenu);
-
-    }
+    ];
 
     return (
-        <nav className="nav-container">
+        <nav>
             <div className="nav-logo-container">
-                <h1 className="nav-logo">Billy</h1>
-                <p className="professional-logo">Software Engineer</p>
+                <h1 className="nav-logo">
+                    <a href="/">billy</a>
+                </h1>
             </div>
 
-            <div className={`nav-list-container ${openMenu ? "active" : ""}`}>
-                <ul className="nav-list">
-                    {navLinks.map((link) => {
-                        return <li className="nav-items" key={link.id}><a href="/">{link.linkName}</a></li> 
-                    })}
+            <div className="nav-desktop-container">
+                <ul className="nav-desktop-list">
+                    {navItems.map((item) => (
+                        <li className="nav-desktop-item" key={item.id}>
+                            <a href="/">
+                                <FaCode size={16} />
+                                {item.name}
+                            </a>
+                        </li>
+                    ))}
                 </ul>
+
+                <div className="theme-toggle">
+                    <MdOutlineLightMode size={24} />
+                </div>
             </div>
 
-            <div onClick={handleMenuToggle} className="ham-menu">
-                {openMenu ? <FontAwesomeIcon icon={faXmark} /> : <FontAwesomeIcon icon={faBars} />}
+            <div className="hamburger-menu" onClick={() => alert("Hello World")}>
+                <FaBars />
             </div>
         </nav>
     );
 };
 
-export default Nav;
+export default Nav

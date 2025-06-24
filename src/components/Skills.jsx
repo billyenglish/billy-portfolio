@@ -1,106 +1,88 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHtml5, faCss3Alt, faJs, faPython, faJava, faNodeJs, faFigma, faLinux, faGitAlt } from "@fortawesome/free-brands-svg-icons";
-import { SiTypescript, SiC, SiReact, SiTailwindcss, SiSass, SiBootstrap, SiRedux, SiVite, SiWebpack } from 'react-icons/si';
+import "../assets/styles/skills.css";
+import "../media_queries/skills_media_query.css";
+import { SiHtml5, SiCss3, SiJavascript, SiTypescript, SiVite, SiC, SiWebpack, SiExpress, SiMysql, SiJest, SiJira } from "react-icons/si";
+import { FaReact, FaNodeJs, FaSass, FaBootstrap, FaJava  } from "react-icons/fa";
+import { FaLinux, FaGithub, FaFigma } from "react-icons/fa";
+import { IoLogoPython } from "react-icons/io";
+import SkillsCard from "../subcomponents/SkillsCard";
+
+const skillsLanguages = [
+    { icon: SiHtml5, name: "HTML", id: 0 },
+    { icon: SiCss3, name: "CSS", id: 1 },
+    { icon: SiJavascript, name: "JavaScript", id: 2 },
+    { icon: SiTypescript, name: "TypeScript", id: 3 },
+    { icon: FaJava, name: "Java", id: 4 },
+    { icon: IoLogoPython, name: "Python", id: 5 },
+    { icon: SiC, name: "C", id: 6 },
+];
+
+const skillsFrameworks = [
+    { icon: FaReact, name: "React", id: 0 },
+    { icon: FaNodeJs, name: "Node.js", id: 1 },
+    { icon: FaSass, name: "Sass", id: 2 },
+    { icon: FaBootstrap, name: "Bootstrap", id: 3 },
+    { icon: SiVite, name: "Vite", id: 4 },
+    { icon: SiExpress, name: "JS Express", id: 5 },
+    { icon: SiMysql, name: "MySQL", id: 6 },
+];
+
+const skillsTools = [
+    { icon: FaLinux, name: "Linux", id: 0 },
+    { icon: FaGithub, name: "Github", id: 1 },
+    { icon: FaFigma, name: "Figma", id: 2 },
+    { icon: SiWebpack, name: "Webpack", id: 3 },
+    { icon: SiJest, name: "Jest", id: 4 },
+    { icon: SiJira, name: "Jira", id: 5 },
+];
 
 const Skills = () => {
 
-    const frontendLanguages = [
-        { skillIcon: <FontAwesomeIcon icon={faHtml5} />, skillName: "HTML", id: 0 },
-        { skillIcon: <FontAwesomeIcon icon={faCss3Alt} />, skillName: "CSS", id: 1 },
-        { skillIcon: <FontAwesomeIcon icon={faJs} />, skillName: "JavaScript", id: 2 },
-        { skillIcon: <SiTypescript />, skillName: "TypeScript", id: 3 },
-        { skillIcon: <SiC />, skillName: "C", id: 4 },
-        { skillIcon: <FontAwesomeIcon icon={faPython} />, skillName: "Python", id: 5 },
-        { skillIcon: <FontAwesomeIcon icon={faJava} />, skillName: "Java", id: 6 },
-    ];
-
-    const frameworkLanguages = [
-        { skillIcon: <SiReact />, skillName: "React", id: 0 },
-        { skillIcon: <SiTailwindcss />, skillName: "Tailwind", id: 1 },
-        { skillIcon: <SiSass />, skillName: "Sass", id: 2 },
-        { skillIcon: <SiBootstrap />, skillName: "Bootstrap", id: 3 },
-        { skillIcon: <SiRedux />, skillName: "Redux", id: 4 },
-        { skillIcon: <FontAwesomeIcon icon={faNodeJs} />, skillName: "Node", id: 5 },
-        { skillIcon: <SiVite />, skillName: "Vite", id: 6 },
-    ];
-
-    const softwareTools = [
-        { skillIcon: <FontAwesomeIcon icon={faFigma} />, skillName: "Figma", id: 0 },
-        { skillIcon: <SiWebpack />, skillName: "Webpack", id: 1 },
-        { skillIcon: <FontAwesomeIcon icon={faLinux} />, skillName: "Linux", id: 2 },
-        { skillIcon: <FontAwesomeIcon icon={faGitAlt} />, skillName: "Git", id: 3 },
-    ];
-
     return (
-        <section className="skills-section" id="skills">
-            <h3 className="section-title">Skills</h3>
-
+        <section className="skills-section" id="skills-section">
+            <h3 className="skills-title section-title">Skills</h3>
             <div className="skills-container">
 
-                <div className="software-skills">
+                <h4 className="frontend-title">Frontend</h4>
 
-                    <h4 className="my-skill">languages</h4>
+                <div className="my-skills">
 
-                    <div className="skill-cards-container">
-
-                        {
-                            frontendLanguages.map((skills) => {
-                                return (
-                                    <div key={skills.id} className="skill-card">
-                                        <div className="skill-icon">
-                                            {skills.skillIcon}
-                                        </div>
-                                        <h5 className="skill-title">{skills.skillName}</h5>
-                                    </div>
-                                )
-                            })
-                        }
-
-                    </div>
+                    {skillsLanguages.map((skill) => (
+                        <SkillsCard
+                            key={skill.id}
+                            icon={skill.icon}
+                            name={skill.name}
+                            size={40}
+                        />
+                    ))}
                 </div>
 
-                <div className="software-skills">
-                    <h4 className="my-skill">Frameworks</h4>
 
-                    <div className="skill-cards-container">
+                <div className="my-skills">
 
-                        {
-                            frameworkLanguages.map((skills) => {
-                                return (
-                                    <div key={skills.id} className="skill-card">
-                                        <div className="skill-icon">
-                                            {skills.skillIcon}
-                                        </div>
-                                        <h5 className="skill-title">{skills.skillName}</h5>
-                                    </div>
-                                )
-                            })
-                        }
-
-                    </div>
+                    {skillsFrameworks.map((skill) => (
+                        <SkillsCard
+                            key={skill.id}
+                            icon={skill.icon}
+                            name={skill.name}
+                            size={40}
+                        />
+                    ))}
                 </div>
 
-                <div className="software-skills">
-                    <h4 className="my-skill">Software Tools</h4>
+                <h4 className="Tools Skills">Tools</h4>
+                
+                <div className="my-skills">
 
-
-                    <div className="skill-cards-container">
-                        {
-                            softwareTools.map((skills) => {
-                                return (
-                                    <div key={skills.id} className="skill-card">
-                                        <div className="skill-icon">
-                                            {skills.skillIcon}
-                                        </div>
-                                        <h5 className="skill-title">{skills.skillName}</h5>
-                                    </div>
-                                )
-                            })
-                        }
-                    </div>
+                    {skillsTools.map((skill) => (
+                        <SkillsCard
+                            key={skill.id}
+                            icon={skill.icon}
+                            name={skill.name}
+                            size={40}
+                        />
+                    ))}
                 </div>
             </div>
-
         </section>
     );
 };
