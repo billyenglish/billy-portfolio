@@ -1,34 +1,48 @@
-import aboutMeImage from "../assets/billyenglish.jpeg";
+import "../assets/styles/about.css";
+import "../media_queries/about_me_media_query.css";
+import aboutImage from "../assets/images/billyenglish.jpeg";
 
 const About = () => {
 
     return (
-        <section className="about-me-section" id="about-me-section">
-            <div className="about-me-content about-me-content-left">
-                <h3 className="about-me-title">About Me</h3>
+        <section className="about-section" id="about-section">
 
-                <div className="about-me-image-container">
-                    <img
-                        src={aboutMeImage}
-                        alt="PlaceHolder"
-                        className="about-me-image"
-                    />
+            <h3 className="about-title section-title">
+                About Me
+            </h3>
+
+            <div className="about-me-container">
+                <div className="about-image-container">
+                    <div className="image-container">
+                        <img
+                            src={aboutImage}
+                            alt="About Me Image of Billy English"
+                            className="about-image"
+                            loading="lazy"
+                        />
+                    </div>
                 </div>
+                <div className="about-text-container">
+                    <h4 className="about-intro">
+                        Software Engineer Leveraging Data Center Experience to Build Reliable Apps
+                    </h4>
 
+                    <p className="about-paragraph">
+                        Hi, I&apos;m Billy English — a Software Engineer with hands-on experience in site operations at Twitter/X
+                        and a passion for front-end development. I specialize in building clean, scalable applications using JavaScript,
+                        TypeScript, and React. Backed by certifications from Meta, Google, IBM, and Scrimba, I'm committed to continuous
+                        learning and crafting user-friendly software that delivers real impact.
+                    </p>
+
+                    <p className="about-paragraph">
+                        I&apos;m currently open to software engineering opportunities — feel free to check out my projects below or connect
+                        with me on <span><a href="/">LinkedIn</a></span>.
+                    </p>
+                </div>
             </div>
 
-            <div className="about-me-content about-me-content-right">
-                <p className="about-me-introduction">
-                    Hey there—I&apos;m a Software Engineer whose journey began with a passion for software development,
-                    but I later expanded my skill set by diving into hardware and system operations. My curiosity about
-                    how things work led me to work with infrastructure and scripting, where I gained a deeper understanding
-                    of the full tech stack. Today, I create responsive, user-friendly web applications using tools like JavaScript,
-                    TypeScript, React, and leverage my experience with Python, C, Bash, and SQL to bring a well-rounded approach to
-                    problem-solving. I&apos;m always learning and eager to bring my diverse skill set to a collaborative engineering team.
-                </p>
-            </div>
         </section>
-    );
-};
+    )
+}
 
 export default About;
