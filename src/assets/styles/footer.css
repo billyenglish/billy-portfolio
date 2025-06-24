@@ -1,0 +1,22 @@
+footer {
+    display: flex;
+    height: 4rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4rem;
+    font-size: 1.5rem;
+}
+
+.footer-copyright {
+    font-weight: 500;
+    color: #666;
+}
+
+.footer-contact-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-item a {
+    font-size: 2rem;
+}

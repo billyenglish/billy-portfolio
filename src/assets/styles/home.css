@@ -1,0 +1,261 @@
+/* Home Section */
+
+.home-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-container {
+  max-width: 60rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.home-title {
+  font-family: "Matangi", Arial, sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  animation: anime-title 1s ease-in forwards;
+}
+
+.home-title:hover {
+  cursor: pointer;
+  animation: title-pulse 2s ease-in-out infinite;
+}
+
+@keyframes title-pulse {
+  0%, 100% {
+    transform: scale(.95);
+    transition: transform .6s ease-in-out;
+    opacity: .7;
+  }
+  50% {
+    transform: scale(1);
+    opacity: .85;
+  }
+}
+
+@keyframes anime-title {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.home-description {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  transition: opacity 2s ease-in;
+  animation: anime-description .6s ease-in backwards;
+}
+
+.home-description:hover {
+  cursor: pointer;
+  animation: description-pulse 2s ease-in-out infinite;
+}
+
+@keyframes description-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: .7;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: .85;
+  }
+}
+
+@keyframes anime-description {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.home-btn-container {
+  margin-top: 1rem;
+}
+
+.learn-more-btn {
+  content: "";
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font-size:1.75rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-weight: 300;
+}
+
+.learn-more-btn {
+  animation: learn-more-btn-anime .6s ease-in-out infinite;
+}
+
+@keyframes learn-more-btn-anime {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(4px);
+  }
+}
+
+.learn-more-btn:hover {
+  animation: learn-more-btn-hover .6s ease-in-out infinite;
+}
+
+@keyframes learn-more-btn-hover {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.contact-list {
+  display: flex;
+  gap: 2rem;
+  animation: anime-description 4s ease-in forwards;
+}
+
+.contact-item {
+  font-family: "Matangi", Arial, Helvetica, sans-serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  text-underline-offset: 6px;
+  margin: 3rem 0 0 0;
+  text-decoration: underline;
+  animation: contact-item-anime .6s ease-in-out infinite;
+}
+
+@keyframes contact-item-anime {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(5px);
+  }
+}
+
+.contact-item:hover {
+  cursor: pointer;
+  animation: contact-item-pulse 2s ease-in-out infinite;
+}
+
+@keyframes contact-item-pulse {
+  0%, 100% {
+    transform: scale(.95);
+    transition: transform .6s ease-in-out;
+    opacity: .7;
+  }
+  50% {
+    transform: scale(1);
+    opacity: .85;
+  }
+}
+
+.border-left-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  position: absolute;
+  transform: rotate(90deg);
+  left: -23rem;
+  top: 50%;
+  gap: 1rem;
+}
+
+.border-right-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  position: absolute;
+  transform: rotate(-90deg);
+  right: -23rem;
+  top: 50%;
+  gap: 1rem;
+}
+
+.left-border {
+  border: .8px solid #000;
+  width: 30rem;
+  animation: left-border-anime .4s ease-in forwards;
+}
+
+@keyframes left-border-anime {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(300px);
+  }
+}
+
+.border-logo {
+  font-family: "Matangi", Arial, Helvetica, sans-serif;
+  font-family: cursive;
+  font-size: 1.5rem;
+  letter-spacing: .2rem;
+}
+
+.right-border {
+  border: .8px solid #000;
+  width: 30rem;
+  animation: right-border-anime .4s ease-in forwards;
+}
+
+@keyframes right-border-anime {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(100px);
+  }
+}
+
+.border-logo {
+  font-family: "Matangi", Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: .2rem;
+}
+
+.scroll-down-container {
+  display: flex;
+  position: absolute;
+  bottom: 5rem;
+  margin: 0 auto;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  cursor: pointer;
+  border: 1px solid #000;
+  padding: 10px;
+  border-radius: 50%;
+  animation: scroll-down-anime .6s ease-in-out infinite;
+  background: transparent;
+}
+
+@keyframes scroll-down-anime {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+/* End of Home Section */

@@ -1,0 +1,92 @@
+.skills-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.skills-title {
+    font-size: var(--h3-header-size);
+    font-weight: var(--h3-font-weight);
+    letter-spacing: var(--h3-letter-spacing);
+    margin: var(--h3-margin-spacing);
+    text-transform: var(--h3-text-transform);
+    animation: animate-skill-title 1s ease-in-out forwards;
+}
+
+@keyframes animate-skill-title {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-100px);
+    }
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    animation: animate-skills 1s ease-in-out forwards;
+}
+
+@keyframes animate-skills {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.my-skills {
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.my-skills:nth-child(3) {
+    height: 50%;
+}
+
+.skill-item {
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    border-radius: 75%;
+    width: 12rem;
+    height: 12rem;
+}
+
+.skill-item:hover {
+    cursor: pointer;
+    animation: skillAnimation 0.5s ease-in-out infinite;
+}
+
+@keyframes skillAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.skill-name {
+    font-family: "Matangi", Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+}
