@@ -18,6 +18,7 @@
   font-size: 3rem;
   font-weight: 500;
   animation: anime-title 1s ease-in forwards;
+  position: relative;
 }
 
 .home-title:hover {
@@ -167,36 +168,6 @@
   }
 }
 
-.border-left-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 5;
-  position: absolute;
-  transform: rotate(90deg);
-  left: -23rem;
-  top: 50%;
-  gap: 1rem;
-}
-
-.border-right-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 5;
-  position: absolute;
-  transform: rotate(-90deg);
-  right: -23rem;
-  top: 50%;
-  gap: 1rem;
-}
-
-.left-border {
-  border: .8px solid #000;
-  width: 30rem;
-  animation: left-border-anime .4s ease-in forwards;
-}
-
 @keyframes left-border-anime {
   0%, 100% {
       transform: translateY(0);
@@ -204,34 +175,6 @@
   50% {
       transform: translateY(300px);
   }
-}
-
-.border-logo {
-  font-family: "Matangi", Arial, Helvetica, sans-serif;
-  font-family: cursive;
-  font-size: 1.5rem;
-  letter-spacing: .2rem;
-}
-
-.right-border {
-  border: .8px solid #000;
-  width: 30rem;
-  animation: right-border-anime .4s ease-in forwards;
-}
-
-@keyframes right-border-anime {
-  0%, 100% {
-      transform: translateY(0);
-  }
-  50% {
-      transform: translateY(100px);
-  }
-}
-
-.border-logo {
-  font-family: "Matangi", Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
-  letter-spacing: .2rem;
 }
 
 .scroll-down-container {
