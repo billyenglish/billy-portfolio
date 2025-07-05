@@ -28,7 +28,7 @@ const skillsBackend = [
 
 const skillsTools = [
     { icon: FaLinux, name: "Linux", id: 0 },
-    { icon: FaGithub, name: "Github", id: 1 },
+    { icon: FaGithub, name: "GitHub", id: 1 },
     { icon: FaFigma, name: "Figma", id: 2 },
     { icon: SiWebpack, name: "Webpack", id: 3 },
     { icon: SiJest, name: "Jest", id: 4 },
