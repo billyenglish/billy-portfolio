@@ -38,18 +38,6 @@ const Home = () => {
                        ))}
                     </ul>
                 </div>
-
-                <div className="border-left-container">
-                    <hr className="left-border" />
-                    <p className="border-logo">Billy</p>
-                    <hr className="left-border" />
-                </div>
-
-                <div className="border-right-container">
-                    <hr className="right-border" />
-                    <p className="border-logo">Billy</p>
-                    <hr className="right-border" />
-                </div>
             </div>
 
             <Button
