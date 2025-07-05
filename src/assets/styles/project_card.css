@@ -6,7 +6,7 @@
 
 .project-card:hover {
     cursor: pointer;
-    animation: animate-project-card 2s ease-in 1;
+    animation: animate-project-card 4s ease-in 2s;
 }
 
 @keyframes animate-project-card {
