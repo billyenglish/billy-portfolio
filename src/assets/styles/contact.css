@@ -65,6 +65,7 @@ form {
     height: 5rem;
     width: 40rem;
     padding-left: .5rem;
+    box-shadow: 5px 10px 20px #000;
 }
 
 .user-input:autofill {
@@ -118,6 +119,7 @@ form {
     padding: .5rem 0 0 1rem;
     letter-spacing: .1rem;
     animation: textarea-input-anime .6s ease-in-out;
+    box-shadow: 5px 10px 20px #000;
 }
 
 .textarea-input:focus {
