@@ -1,24 +1,27 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 320px) {
 
     .skills-container {
-        border: 1px solid #000;
-        gap: 5rem;
-        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
     }
 
-    .my-skills {
-        border: 1px solid #000;
-        gap: 3rem;
-        width: 100%;;
-        width: 100%;
+}
+
+@media screen and (min-width: 321px) and (max-width: 576px) {
+
+    .skills-container {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 
-    .skill-icon {
-        font-size: .75rem;
-    }
+}
 
-    .skill-name {
-        font-size: 1rem;
+@media screen and (min-width: 577px) and (max-width: 768px) {
+
+    .skills-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10rem;
     }
 
 }
