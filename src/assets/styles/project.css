@@ -16,12 +16,14 @@
 }
 
 .projects-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 5rem;
-    padding: 0 0 10rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    place-content: center;
+    row-gap: 2rem;
+    column-gap: 3rem;
     animation: projects-animate 1s ease-in forwards;
+    width: 100%;
 }
 
 @keyframes projects-animate {
