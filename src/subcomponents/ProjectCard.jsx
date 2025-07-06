@@ -1,3 +1,5 @@
+import "../assets/styles/project_card.css";
+import "../media_queries/projects_card_media_query.css";
 import projectDescription from "./ProjectDescription";
 
 const ProjectCard = () => {
