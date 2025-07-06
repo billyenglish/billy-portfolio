@@ -1,0 +1,147 @@
+@media screen and (max-width: 320px) {
+
+    .project-card {
+        border: 1px solid #000;
+        height: 30rem;
+        width: 30rem;
+    }
+
+    .project-image-container {
+        border: 1px solid #000;
+        height: 10rem;
+        width: 100%;
+    }
+
+    .project-image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .project-text-containter {
+        padding: 10rem;
+    }
+
+    .project-title {
+        font-family: "Matangi", Arial, sans-serif;
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin: 1rem 0 0 1rem;
+        padding: 0 0 .5rem 0;
+        letter-spacing: .2rem;
+    }
+
+    .project-description {
+        font-family: "Matangi", Arial, sans-serif;
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 2rem;
+        margin: .25rem 1rem 0 1rem;
+        text-align: justify;
+    }
+
+    .project-controls {
+        display: flex;
+        justify-content: space-between;
+        margin: .75rem 1rem 0 1rem;
+    }
+
+    .project-controls button {
+        font-family: "Matangi", Arial, sans-serif;
+        font-size: 1.2rem;
+        font-weight: 400;
+        letter-spacing: .1rem;
+        padding: .1rem .2rem;
+        width: 10rem;
+        border: 1px solid #000;
+    }
+
+}
+
+@media screen and (min-width: 321px) and (max-width: 576px) {
+
+    .project-card {
+        border: 1px solid #000;
+        height: 36rem;
+        width: 36rem;
+    }
+
+    .project-image-container {
+        border: 1px solid #000;
+        height: 14rem;
+        width: 100%;
+    }
+
+    .project-title {
+        font-family: "Matangi", Arial, sans-serif;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin: 1.25rem 0 0 1rem;
+        padding: 0 0 .5rem 0;
+        letter-spacing: .2rem;
+    }
+
+    .project-description {
+        font-family: "Matangi", Arial, sans-serif;
+        font-size: 1.3rem;
+        font-weight: 400;
+        line-height: 2.5rem;
+        margin: .25rem 1rem 0 1rem;
+        text-align: justify;
+    }
+
+    .project-controls button {
+        font-family: "Matangi", Arial, sans-serif;
+        font-size: 1.25rem;
+        font-weight: 400;
+        letter-spacing: .1rem;
+        padding: .1rem .2rem;
+        width: 10rem;
+        border: 1px solid #000;
+    }
+
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+
+    .project-card {
+        border: 1px solid #000;
+        height: 38rem;
+        width: 36rem;
+    }
+
+    .project-image-container {
+        border: 1px solid #000;
+        height: 16rem;
+        width: 100%;
+    }
+
+    .project-title {
+        font-family: "Matangi", Arial, sans-serif;
+        font-size: 1.55rem;
+        font-weight: 600;
+        margin: 1.25rem 0 0 1rem;
+        padding: 0 0 .5rem 0;
+        letter-spacing: .2rem;
+    }
+
+    .project-description {
+        font-family: "Matangi", Arial, sans-serif;
+        font-size: 1.3rem;
+        font-weight: 400;
+        line-height: 2.5rem;
+        margin: .25rem 1rem 0 1rem;
+        text-align: justify;
+    }
+
+    .project-controls button {
+        font-family: "Matangi", Arial, sans-serif;
+        font-size: 1.25rem;
+        font-weight: 400;
+        letter-spacing: .1rem;
+        padding: .1rem .2rem;
+        width: 10rem;
+        border: 1px solid #000;
+    }
+
+}
