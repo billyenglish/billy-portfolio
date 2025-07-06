@@ -1,67 +1,156 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 320px) {
 
     .home-container {
-        gap: 1.5rem;
+        max-width: 24rem;
+        gap: 2rem;
     }
 
     .home-title {
-        font-size: 1.75rem;
+        font-size: 1.9rem;
+        font-weight: 500;
+        line-height: 4rem;
+        animation: none !important;
     }
 
     .home-description {
-        font-size: 1.2rem;
+        font-size: 1.35rem;
         font-weight: 400;
+        line-height: 3rem;
+        animation: none !important;
+    }
+
+    .home-btn-container {
+        margin: 1rem 0 0 0;
     }
 
     .learn-more-btn {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
+        animation: none !important;
+    }
+
+    .contact-list {
+        animation: none !important;
     }
 
     .contact-item {
-        font-size: 1.1rem;
-        margin: 1.5rem 0 0 0;
-    }
-
-    .border-left-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 5;
-        position: absolute;
-        transform: rotate(90deg);
-        left: -14rem;
-        top: 50%;
-        gap: 1rem;
-    }
-
-    .border-right-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 5;
-        position: absolute;
-        transform: rotate(-90deg);
-        right: -14rem;
-        top: 50%;
-        gap: 1rem;
-    }
-
-    .left-border {
-        border: .8px solid #000;
-        width: 16rem;
-        animation: left-border-anime .4s ease-in forwards;
-    }
-
-    .right-border {
-        border: .8px solid #000;
-        width: 16rem;
-        animation: right-border-anime .4s ease-in forwards;
+        font-family: "Matangi", Arial, Helvetica, sans-serif;
+        font-size: 1.25rem;
+        font-weight: 700;
+        text-underline-offset: 6px;
+        margin: 1rem 0 0 0;
+        animation: none !important;
     }
 
     .scroll-down-container {
+        bottom: 1rem;
         font-size: 1.25rem;
-        padding: 2.5px;
-        bottom: 3rem;
+        padding: 5px;
+        animation: none !important;
+        left: 50%;
+    }
+
+}
+
+@media screen and (min-width: 321px) and (max-width: 576px) {
+
+    .home-container {
+        border: 1px solid #000;
+        max-width: 34rem;
+        gap: 2rem;
+    }
+
+    .home-title {
+        font-size: 2.5rem;
+        font-weight: 500;
+        line-height: 5rem;
+        animation: none !important;
+    }
+
+    .home-description {
+        font-weight: 400;
+        line-height: 3rem;
+        animation: none !important;
+    }
+
+    .home-btn-container {
+        margin: 1rem 0 0 0;
+    }
+
+    .learn-more-btn {
+        font-size: 1.75rem;
+        animation: none !important;
+    }
+
+    .contact-list {
+        animation: none !important;
+    }
+
+    .contact-item {
+        font-family: "Matangi", Arial, Helvetica, sans-serif;
+        font-size: 1.4rem;
+        font-weight: 700;
+        text-underline-offset: 6px;
+        margin: .5rem 0 0 0;
+        animation: none !important;
+    }
+
+    .scroll-down-container {
+        bottom: 1rem;
+        font-size: 1.5rem;
+        padding: 5px;
+        animation: none !important;
+        left: 50%;
+    }
+
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+
+    .home-container {
+        border: 1px solid #000;
+        max-width: 60rem;
+        gap: 2.5rem;
+    }
+
+    .home-title {
+        font-size: 2.75rem;
+        font-weight: 500;
+        line-height: 6rem;
+        animation: none !important;
+    }
+
+    .home-description {
+        font-weight: 400;
+        line-height: 4rem;
+        animation: none !important;
+    }
+
+    .home-btn-container {
+        margin: 1rem 0 0 0;
+    }
+
+    .learn-more-btn {
+        font-size: 1.75rem;
+        animation: none !important;
+    }
+
+    .contact-list {
+        animation: none !important;
+    }
+
+    .contact-item {
+        font-family: "Matangi", Arial, Helvetica, sans-serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-underline-offset: 6px;
+        margin: 1rem 0 0 0;
+    }
+
+    .scroll-down-container {
+        bottom: 1rem;
+        font-size: 1.5rem;
+        padding: 5px;
+        margin: 0 auto;
     }
 
 }
