@@ -6,7 +6,7 @@ const Contact = () => {
 
     return (
         <section className="contact-section" id="contact-section">
-            <h3 className="section-title contact-title">Contact</h3>
+            <h3 className="contact-title">Contact</h3>
 
             {/*<p className="contact-description">
                 I&apos;m currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I&apos;ll try my best to get back to you!
