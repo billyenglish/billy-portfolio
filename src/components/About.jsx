@@ -7,7 +7,7 @@ const About = () => {
     return (
         <section className="about-section" id="about-section">
 
-            <h3 className="about-title section-title">
+            <h3 className="about-title">
                 About Me
             </h3>
 
@@ -42,7 +42,7 @@ const About = () => {
             </div>
 
         </section>
-    )
-}
+    );
+};
 
 export default About;
