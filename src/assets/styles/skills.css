@@ -3,6 +3,7 @@
     flex-direction: column;
     gap: 5rem;
     justify-content: center;
+    align-items: center;
 }
 
 .skills-title {
@@ -15,11 +16,11 @@
 }
 
 .skills-container {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
-    gap: 4rem;
-    justify-content: center;
+    column-gap: 4rem;
+    place-content: center;
 }
 
 .skill-section {
@@ -43,7 +44,6 @@
 }
 
 .skill-item {
-    border: 1px solid gray;
     display: flex;
     flex-direction: column;
     align-items: center;
