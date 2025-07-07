@@ -121,6 +121,10 @@ nav {
   text-underline-offset: 6px;
 }
 
+.nav-mobile-container {
+  display: none;
+}
+
 .theme-toggle {
   cursor: pointer;
 }
@@ -149,4 +153,8 @@ nav {
 
 .hamburger-menu {
   display: none;
+}
+
+.hamburger-menu:hover {
+  cursor: pointer;
 }
