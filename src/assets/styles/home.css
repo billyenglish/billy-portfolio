@@ -20,6 +20,7 @@
   font-weight: 500;
   animation: anime-title 1s ease-in forwards;
   position: relative;
+  margin: 4rem 0 0 0;
 }
 
 .home-title:hover {
