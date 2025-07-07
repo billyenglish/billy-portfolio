@@ -1,16 +1,16 @@
 @media screen and (max-width: 320px) {
 
     nav {
-        padding: 2rem 1rem;
+        padding: 3rem 4rem;
         align-items: center;
         justify-content: space-between;
-        border: 1px solid #000;
         animation: none !important;
     }
 
     .nav-desktop-container {
         display: none;
     }
+
     .hamburger-menu {
         display: block;
         font-size: 2.25rem;
@@ -23,20 +23,45 @@
     nav {
         padding: 2rem;
         align-items: center;
-        border: 1px solid #000;
-    }
-
-}
-
-@media screen and (max-width: 576px) {
-
-    nav {
-        padding: 2rem 5rem;
+        padding: 3rem 4rem;
+        animation: none !important;
+        justify-content: space-between;
     }
 
     .nav-desktop-container {
         display: none;
     }
+
+    .nav-mobile-container.show {
+        display: flex;
+        position: absolute;
+        top: 6rem;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        z-index: 999;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-mobile-list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.5rem;
+        margin: 0 0 10rem 0;
+    }
+
+    .nav-mobile-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        font-size: 2rem;
+    }
+
     .hamburger-menu {
         display: block;
         font-size: 2.25rem;
@@ -44,11 +69,46 @@
 
 }
 
-@media screen and (min-width: 577px) and (max-width: 768px) {
+@media screen and (min-width: 576px) and (max-width: 767px) {
+
+    nav {
+        padding: 3rem 8rem;
+    }
 
     .nav-desktop-container {
         display: none;
     }
+
+    .nav-mobile-container.show {
+        display: flex;
+        position: absolute;
+        top: 6rem;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        z-index: 999;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-mobile-list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.5rem;
+        margin: 0 0 10rem 0;
+    }
+
+    .nav-mobile-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        font-size: 2rem;
+    }
+
     .hamburger-menu {
         display: block;
         font-size: 2.25rem;
@@ -65,6 +125,84 @@
     .nav-desktop-container {
         display: none;
     }
+
+    .nav-mobile-container.show {
+        display: flex;
+        position: absolute;
+        top: 6rem;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        z-index: 999;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-mobile-list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.5rem;
+        margin: 0 0 10rem 0;
+    }
+
+    .nav-mobile-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        font-size: 2rem;
+    }
+
+    .hamburger-menu {
+        display: block;
+        font-size: 2.25rem;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    nav {
+        padding: 3rem 8rem;
+    }
+
+    .nav-desktop-container {
+        display: none;
+    }
+
+    .nav-mobile-container.show {
+        display: flex;
+        position: absolute;
+        top: 6rem;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        z-index: 999;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-mobile-list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.5rem;
+        margin: 0 0 10rem 0;
+    }
+
+    .nav-mobile-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        font-size: 2rem;
+    }
+
     .hamburger-menu {
         display: block;
         font-size: 2.25rem;
