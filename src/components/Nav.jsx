@@ -78,8 +78,10 @@ const Nav = () => {
                             className="nav-mobile-item"
                             key={items.id}
                         >
-                            <FaCode size={20} className="link-icon" />
-                            {items.name}
+                            <a href="/">
+                                <FaCode size={20} className="link-icon" />
+                                {items.name}
+                            </a>
                          </li>
                     ))}
                 </ul>
@@ -87,7 +89,7 @@ const Nav = () => {
 
             <div className="hamburger-menu" onClick={toggleMenuOpen}>
                 {
-                    !openMenu ? <FaBars size={24} /> : <FaX size={22} />
+                    !openMenu ? <FaBars size={24} className="hamburger_menu" /> : <FaX className="close_menu" size={22} />
                 }
             </div>
         </nav>

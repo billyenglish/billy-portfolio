@@ -133,6 +133,17 @@ nav {
   display: none;
 }
 
+.nav-mobile-item a {
+  display: flex;
+  align-items: center;
+  color: var(--accent-primary);
+  gap: 1rem;
+}
+
+.nav-mobile-item a:hover {
+  color: var(--text-primary);
+}
+
 .theme-toggle {
   cursor: pointer;
   color: var(--accent-primary);
@@ -140,7 +151,7 @@ nav {
 
 .theme-toggle:hover {
   animation: hover-pulse .6s ease-in-out infinite;
-  color: var(--accent-secondary);
+  color: var(--text-primary);
 }
 
 @keyframes hover-pulse {
@@ -163,8 +174,9 @@ nav {
 
 .hamburger-menu {
   display: none;
+  color: var(--accent-primary);
 }
 
 .hamburger-menu:hover {
-  cursor: pointer;
+  color: var(--text-primary);
 }

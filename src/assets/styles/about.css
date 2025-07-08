@@ -83,7 +83,7 @@
     font-weight: 500;
     line-height: 4.5rem;
     text-align: normal;
-    color: var(--text-secondary);
+    color: var(--accent-primary);
 }
 
 .about-paragraph {

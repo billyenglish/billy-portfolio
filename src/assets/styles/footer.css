@@ -9,7 +9,7 @@ footer {
 
 .footer-copyright {
     font-weight: 500;
-    color: #666;
+    color: var(--accent-primary);
 }
 
 .footer-contact-container {
@@ -19,4 +19,5 @@ footer {
 
 .footer-item a {
     font-size: 2rem;
+    color: var(--accent-primary);
 }

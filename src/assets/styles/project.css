@@ -37,3 +37,17 @@
         transform: translateX(0);
     }
 }
+
+.see-more-button {
+    font-size: 2rem;
+    font-weight: 400;
+    background-color: var(--accent-secondary);
+    color: var(--accent-primary);
+    padding: .4rem;
+    box-shadow: none;
+    border-color: var(--border-color);
+}
+
+.see-more-button:hover {
+    cursor: pointer;
+}
