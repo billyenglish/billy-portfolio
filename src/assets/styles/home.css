@@ -21,12 +21,13 @@
   animation: anime-title 1s ease-in forwards;
   position: relative;
   margin: 4rem 0 0 0;
-  color: var(--primary-text);
+  color: var(--text-primary);
 }
 
 .home-title:hover {
   cursor: pointer;
   animation: title-pulse 2s ease-in-out infinite;
+  color: var(--accent-secondary);
 }
 
 @keyframes title-pulse {
@@ -57,13 +58,14 @@
   line-height: 1.5;
   transition: opacity 2s ease-in;
   animation: anime-description .6s ease-in backwards;
-  color: var(--accent-secondary);
-  font-weight: 500;
+  font-weight: 400;
+  color: var(--text-secondary);
 }
 
 .home-description:hover {
   cursor: pointer;
   animation: description-pulse 2s ease-in-out infinite;
+  color: var(--accent-secondary);
 }
 
 @keyframes description-pulse {
@@ -103,7 +105,7 @@
   cursor: pointer;
   font-weight: 300;
   animation: learn-more-btn-anime .6s ease-in-out infinite;
-  color: var(--action-color);
+  color: var(--accent-primary);
 }
 
 @keyframes learn-more-btn-anime {
@@ -117,6 +119,7 @@
 
 .learn-more-btn:hover {
   animation: learn-more-btn-hover .6s ease-in-out infinite;
+  color: var(--text-primary);
 }
 
 @keyframes learn-more-btn-hover {
@@ -143,7 +146,7 @@
   margin: 2rem 0 0 0;
   text-decoration: underline;
   animation: contact-item-anime .6s ease-in-out infinite;
-  color: var(--accent-secondary);
+  color: var(--text-primary);
 }
 
 @keyframes contact-item-anime {
@@ -158,6 +161,7 @@
 .contact-item:hover {
   cursor: pointer;
   animation: contact-item-pulse 2s ease-in-out infinite;
+  color: var(--accent-primary);
 }
 
 @keyframes contact-item-pulse {
@@ -189,23 +193,25 @@
   transform: translateX(-50%);
   font-size: 2rem;
   cursor: pointer;
-  border: 2px solid var(--action-color);
+  border: 2px solid #000;
   padding: 10px;
   border-radius: 50%;
   animation: scroll-down-anime .6s ease-in-out infinite;
-  background: transparent;
+  opacity: .8;
+  border: var(--accent-primary);
 }
 
 .scroll-down-container:hover {
-  border: 2px solid var(--accent-secondary);
+  border: 2px solid var(--text-primary);
+  background-color: var(--accent-primary);
 }
 
 .arrow-icon {
-  color: var(--action-secondary);
+  color: var(--accent-primary);
 }
 
 .arrow-icon:hover {
-  color: var(--action-color);
+  color: var(--text-primary);
 }
 
 @keyframes scroll-down-anime {

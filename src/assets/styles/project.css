@@ -13,6 +13,7 @@
     margin: var(--h3-margin-spacing);
     text-transform: var(--h3-text-transform);
     animation: anime-title 1s ease-in forwards;
+    color: var(--text-primary);
 }
 
 .projects-container {
