@@ -8,6 +8,8 @@ nav {
   position: fixed;
   z-index: 1000;
   width: 100%;
+  background-color: var(--background-color);
+  opacity: .9;
 }
 
 .nav-logo-container {
@@ -17,7 +19,7 @@ nav {
 .nav-logo {
   font-family: "Matangi", cursive;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: .2rem;
   animation: nav-logo-anime .6s ease-in backwards;
 }
@@ -38,23 +40,24 @@ nav {
 
 .nav-logo a {
   display: flex;
-  color: black;
-  transition: all ease-in-out 1s;
+  transition: color 0.3s ease-in-out;
+  transform-origin: center;
+  will-change: transform;
+  color: var(--action-color);
 }
 
 .nav-logo a:hover {
-  animation: nav-logo-hover .6s ease-in-out infinite;
+  animation: nav-logo-hover 0.6s ease-in-out 2 alternate;
+  color: var(--link-hover);
 }
 
 @keyframes nav-logo-hover {
   0%, 100% {
-    transform: rotate(90deg);
-    transform: scale(1.1);
+    transform: rotate(10deg) scale(1.1);
   }
 
   50% {
-    transform: rotate(-90deg);
-    transform: scale(1);
+    transform: rotate(-10deg) scale(1);
   }
 }
 
@@ -74,7 +77,7 @@ nav {
   align-items: center;
   gap: 1rem;
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.1rem;
   animation: nav-item-anime .6s ease-in backwards;
 }
@@ -108,17 +111,22 @@ nav {
   }
 }
 
+.link-icon {
+  color: var(--accent-secondary);
+}
+
 .nav-desktop-item a {
   display: flex;
   align-items: center;
   gap: .5rem;
-  color: black;
+  color: var(--action-color);
 }
 
 .nav-desktop-item a:hover {
   animation: nav-item-anime .6s ease-in-out infinite;
   text-decoration: underline;
   text-underline-offset: 6px;
+  color: var(--link-hover);
 }
 
 .nav-mobile-container {
@@ -126,11 +134,13 @@ nav {
 }
 
 .theme-toggle {
+  color: var(--action-color);
   cursor: pointer;
 }
 
 .theme-toggle:hover {
   animation: hover-pulse .6s ease-in-out infinite;
+  color: var(--link-hover);
 }
 
 @keyframes hover-pulse {
@@ -138,7 +148,7 @@ nav {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.1);
+    transform: scale(1.25);
   }
 }
 
