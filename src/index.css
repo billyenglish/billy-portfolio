@@ -6,19 +6,33 @@
   --h3-letter-spacing: .2rem;
   --h3-text-transform: capitalize;
   --h3-margin-spacing: 5rem 0 3rem 0;
+
+  /* Default colors */
+
+  --background-color: #F5F2EC;
+  --primary-text: #2C2C2C;
+  --accent-primary: #D1A91A;
+  --accent-secondary: #376983;
+  --action-color: #B7372F;
+  --surface-color: #FFFFFF;
+  --border-color: #C2B8A3;
+  --link-hover: #264653;
 }
+
+/* Global Selectors */
 
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style: none;
-  background-color: var(--color-1);
 }
 
 *, *::before, *::after {
   box-sizing: border-box;
 }
+
+/* Html and Body Section */
 
 html, body {
   font-family: "Open Sans", Arial, sans-serif;
@@ -28,8 +42,11 @@ html, body {
   width: 100%;
 }
 
-a {
-  cursor: pointer;
+/* Body Section */
+
+body {
+  background-color: var(--background-color);
+  color: var(--primary-text);
 }
 
 /* Main Sections */
