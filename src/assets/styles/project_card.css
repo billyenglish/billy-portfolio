@@ -1,8 +1,9 @@
 .project-card {
-    border: 1px solid #000;
+    border: 1px solid var(--primary-text);
     height: 34rem;
     width: 48rem;
-    box-shadow: 16px 10px 5px #000;
+    box-shadow: 16px 10px 5px var(--primary-text);
+    background-color: var(--surface-color);
 }
 
 .project-card:hover {
@@ -26,7 +27,7 @@
 }
 
 .project-image-container {
-    border: 1px solid #000;
+    border: 1px solid var(--primary-text);
     height: 15rem;
     width: 100%;
 }
@@ -48,15 +49,17 @@
     margin: .5rem 0 0 1rem;
     padding: 0 0 .5rem 0;
     letter-spacing: .2rem;
+    color: var(--action-color);
 }
 
 .project-description {
     font-family: "Matangi", Arial, sans-serif;
     font-size: 1.25rem;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 2.5rem;
     margin: .5rem 1rem 0 1rem;
     text-align: justify;
+    color: var(--accent-secondary);
 }
 
 .project-controls {
@@ -72,7 +75,9 @@
     letter-spacing: .1rem;
     padding: .1rem .3rem;
     width: 10rem;
-    border: 1px solid #000;
+    border: 1px solid var(--action-color);
+    border-radius: .1rem;
+    background-color: var(--surface-color);
 }
 
 .project-controls button:hover {
