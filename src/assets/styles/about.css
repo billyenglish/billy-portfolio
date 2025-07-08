@@ -14,6 +14,7 @@
     text-transform: var(--h3-text-transform);
     animation: anime-title 1s ease-in forwards;
     text-align: center;
+    color: var(--primary-text);
 }
 
 @keyframes anime-title {
@@ -82,6 +83,7 @@
     font-weight: 500;
     line-height: 4.5rem;
     text-align: normal;
+    color: var(--accent-secondary);
 }
 
 .about-paragraph {
@@ -90,6 +92,11 @@
     line-height: 3.5rem;
     margin: 4rem 0 0 0;
     text-align: normal;
+    color: var(--primary-text);
+}
+
+.linkedin {
+    color: var(--action-color);
 }
 
 .about-paragraph:hover {
