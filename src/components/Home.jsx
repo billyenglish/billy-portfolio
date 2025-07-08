@@ -42,7 +42,7 @@ const Home = () => {
 
             <Button
                 className="scroll-down-container"
-                content={<IoMdArrowDown size={24} />}
+                content={<IoMdArrowDown className="arrow-icon" size={24} />}
             />
         </section>
     );

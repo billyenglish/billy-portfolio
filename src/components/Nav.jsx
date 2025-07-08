@@ -1,16 +1,21 @@
 import "../assets/styles/nav.css";
 import "../media_queries/nav_media_query.css";
 import { FaBars, FaCode } from 'react-icons/fa';
-import { MdOutlineLightMode } from "react-icons/md";
+import { MdOutlineLightMode, MdOutlineDarkMode } from "react-icons/md";
 import { FaX } from "react-icons/fa6";
 import { useState } from "react";
 
 const Nav = () => {
 
     const [openMenu, setOpenMenu] = useState(false);
+    const [darkMode, setDarkMode] = useState(false);
 
     const toggleMenuOpen = () => {
         setOpenMenu(openMenu => !openMenu);
+    }
+
+    const toggleLightDark = () => {
+        setDarkMode(darkMode => !darkMode);
     }
 
     const navItems = [
@@ -52,15 +57,17 @@ const Nav = () => {
                             key={items.id}
                         >
                             <a href="/">
-                                <FaCode size={16} />
+                                <FaCode size={18} className="link-icon" />
                                 {items.name}
                             </a>
                         </li>
                     ))}
                 </ul>
 
-                <div className="theme-toggle">
-                    <MdOutlineLightMode size={24} />
+                <div className="theme-toggle" onClick={toggleLightDark}>
+                    {
+                        darkMode ? <MdOutlineDarkMode size={24} /> : <MdOutlineLightMode size={24} />
+                    }
                 </div>
             </div>
 
@@ -71,7 +78,7 @@ const Nav = () => {
                             className="nav-mobile-item"
                             key={items.id}
                         >
-                            <FaCode size={20} />
+                            <FaCode size={20} className="link-icon" />
                             {items.name}
                          </li>
                     ))}
