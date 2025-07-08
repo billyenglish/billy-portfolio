@@ -36,7 +36,7 @@ const About = () => {
 
                     <p className="about-paragraph">
                         I&apos;m currently open to software engineering opportunities — feel free to check out my projects below or connect
-                        with me on <span><a href="/">LinkedIn</a></span>.
+                        with me on <span><a href="/" className="linkedin">LinkedIn</a></span>.
                     </p>
                 </div>
             </div>
