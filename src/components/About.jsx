@@ -28,15 +28,20 @@ const About = () => {
                     </h4>
 
                     <p className="about-paragraph">
-                        Hi, I&apos;m Billy English — a Software Engineer with hands-on experience in site operations at Twitter/X
-                        and a passion for front-end development. I specialize in building clean, scalable applications using JavaScript,
-                        TypeScript, and React. Backed by certifications from Meta, Google, IBM, and Scrimba, I'm committed to continuous
-                        learning and crafting user-friendly software that delivers real impact.
+                        I'm a front-end software engineer with a passion for creating clean, user-friendly interfaces. My journey began in data
+                        center operations at Twitter, where I developed a deep appreciation for systems, precision, and performance. After transitioning
+                        back into software, I focused on modern web technologies—building projects with JavaScript, TypeScript, React, and Tailwind CSS.
                     </p>
 
                     <p className="about-paragraph">
-                        I&apos;m currently open to software engineering opportunities — feel free to check out my projects below or connect
-                        with me on <span><a href="/" className="linkedin">LinkedIn</a></span>.
+                        I've completed certifications through Meta and Google, and continue to sharpen my skills through The Odin Project and hands-on
+                        development. Whether it's crafting responsive layouts or solving complex UI challenges, I'm always learning and striving to build
+                        things that are both functional and beautiful.
+                    </p>
+
+                    <p className="about-paragraph">
+                        I'm currently open to software engineering roles where I can collaborate, grow, and contribute to meaningful projects
+                        <span><a href="/" className="linkedin">LinkedIn</a></span>.
                     </p>
                 </div>
             </div>
