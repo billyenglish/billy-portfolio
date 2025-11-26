@@ -2,6 +2,7 @@ import Nav from "./Nav";
 import Footer from "./Footer";
 import Button from "../subcomponent/Button";
 import currentRoute from "../subcomponent/CurrentNavigation";
+import "../assets/media_queries/homepage_query.css";
 
 const Homepage = () => {
 
