@@ -28,9 +28,9 @@
 }
 
 .card_title {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     font-weight: 400;
-    padding: .2rem 0;
+    padding: .4rem 0;
     text-decoration: underline;
     text-underline-offset: 8px;
 }
@@ -38,7 +38,7 @@
 .card_subtitle {
     font-size: .9rem;
     font-weight: 400;
-    line-height: 1.5rem;
+    line-height: 1.25rem;
 }
 
 .tech_stack {
