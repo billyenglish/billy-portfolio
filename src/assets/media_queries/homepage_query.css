@@ -1,0 +1,134 @@
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+
+    #homepage_content {
+        width: clamp(45rem, 95vw, 110rem);
+        gap: 3.5rem;
+    }
+
+    #homepage_title {
+        font-size: 2.65rem;
+    }
+
+    #homepage_subtitle {
+        font-size: 1.25rem;
+        line-height: 3.25rem;
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    #homepage_content {
+        width: clamp(40rem, 90vw, 100rem);
+        gap: 3.25rem;
+    }
+
+    #homepage_title {
+        font-size: 2.5rem;
+    }
+
+    #homepage_subtitle {
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 3rem;
+    }
+
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+
+    #homepage_content {
+        width: clamp(30rem, 90vw, 100rem);
+        gap: 3rem;
+    }
+
+    #homepage_title {
+        font-size: 2.3rem;
+    }
+
+    #homepage_subtitle {
+        font-size: 1.1rem;
+        font-weight: 400;
+        line-height: 2.85rem;
+    }
+
+    .homepage_button {
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+
+}
+
+@media screen and (min-width: 376px) and (max-width: 425px) {
+
+    #homepage_content {
+        max-width: 24rem;
+        gap: 2.5rem;
+    }
+
+    #homepage_title {
+        font-size: 2.2rem;
+    }
+
+    #homepage_subtitle {
+        font-size: 1rem;
+        font-weight: 500rem;
+        line-height: 2.75rem;
+    }
+
+    .homepage_button {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+}
+
+@media screen and (min-width: 321px) and (max-width: 375px) {
+
+    #homepage_content {
+        max-width: 20rem;
+        gap: 2.5rem;
+    }
+
+    #homepage_title {
+        font-size: 2.1rem;
+        font-weight: 500;
+    }
+
+    #homepage_subtitle {
+        font-size: .9rem;
+        font-weight: 500;
+        line-height: 2.5rem;
+    }
+
+    .homepage_button {
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+    #homepage_content {
+        max-width: 18rem;
+        gap: 3rem;
+    }
+
+    #homepage_title {
+        font-size: 2rem;
+    }
+
+    #homepage_subtitle {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: .85rem;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .homepage_button {
+        font-size: 1rem;
+    }
+
+}

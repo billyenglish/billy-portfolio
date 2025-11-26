@@ -1,0 +1,66 @@
+#contact_me_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 4rem;
+    padding: 8rem 0 0 0;
+}
+
+#form_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    height: 60vh;
+}
+
+input {
+    font-family: 'Fuzzy Bubbles';
+    height: 3rem;
+    width: 32rem;
+}
+
+input[type] {
+    flex: display;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 0 0 0 .25rem;
+    color: #000;
+}
+
+input::placeholder {
+    font-family: 'Fuzzy Bubbles';
+    font-size: 1.5rem;
+    color: #000;
+}
+
+textarea {
+    font-size: 1.5rem;
+    height: 20rem;
+    width: 32rem;
+    resize: none;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    padding: .5rem 0 0 .25rem;
+    color: #000;
+}
+
+textarea::placeholder {
+    font-family: 'Fuzzy Bubbles';
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.form_control_panel {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+}
+
+.form_button {
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding: .2rem .25rem;
+    width: 6rem;
+}

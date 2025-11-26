@@ -1,0 +1,73 @@
+#projects_section {
+    display: flex;
+    align-self: normal;
+    justify-content: flex-start;
+    padding: 5rem 0 0 0;
+    gap: 4rem;
+}
+
+#project_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 70vh;
+    width: 100%;
+    place-items: center;
+    place-content: start;
+    column-gap: 1rem;
+}
+
+.project_card {
+    border: 1px solid #000;
+    border-radius: .25rem;
+    height: 20rem;
+    width: 32rem;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+
+.card_title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: .2rem 0;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+.card_subtitle {
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.tech_stack {
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.description {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.project_description {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+.project_control_panel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project_button {
+    border: none;
+    background-color: transparent;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
