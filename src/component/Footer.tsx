@@ -1,3 +1,5 @@
+import "../assets/media_queries/footer_query.css";
+
 const Footer = () => {
 
     return (
