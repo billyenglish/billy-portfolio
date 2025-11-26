@@ -1,6 +1,6 @@
 import Nav from "./Nav";
 import Footer from "./Footer";
-import Button from "../subcomponent/Button";
+import ProjectCards from "../subcomponent/ProjectCards";
 import "../assets/styles/projects.css";
 
 const Projects = () => {
@@ -14,69 +14,25 @@ const Projects = () => {
                 </h3>
 
                 <div id="project_container">
-                    <div className="project_card">
-                        <h4 className="card_title">
-                            Project Title
-                        </h4>
 
-                        <h5 className="card_subtitle">
-                            <span className="tech_stack">
-                                Tech Stack:
-                            </span> Tech Stack: HTML, CSS, JavaScript, React, Tailwind CSS
-                        </h5>
+                    <ProjectCards
+                        title="Calculator"
+                        subtitle="Simple Calculator"
+                        description="
+                            Calculator Application is a web-based tool built with HTML, CSS,
+                            and JavaScript that allows users to perform basic arithmetic operations
+                            like addition, subtraction, multiplication, and division. It features a
+                            user-friendly interface with interactive buttons and dynamic calculations.
+                        "
+                    />
 
-                        <p className="project_description">
-                            <span></span> A responsive single-page e-commerce application that
-                            allows users to browse products, view detailed descriptions, and
-                            add items to a shopping cart. Integrated interactive UI components,
-                            mobile-first design, and basic cart functionality using React state
-                            management.
-                        </p>
+                    <ProjectCards
+                        title="Resume Builder"
+                        subtitle=""
+                        description="
+                        "
+                    />
 
-                        <div className="project_control_panel">
-                            <Button
-                                text="Source Code"
-                                className="project_button"
-                            />
-
-                            <Button
-                                text="Live Demo"
-                                className="project_button"
-                            />
-                        </div>
-                    </div>
-
-                    <div className="project_card">
-                        <h4 className="card_title">
-                            Project Title
-                        </h4>
-
-                        <h5 className="card_subtitle">
-                            <span className="tech_stack">
-                                Tech Stack:
-                            </span> Tech Stack: HTML, CSS, JavaScript, React, Tailwind CSS
-                        </h5>
-
-                        <p className="project_description">
-                            <span></span> A responsive single-page e-commerce application that
-                            allows users to browse products, view detailed descriptions, and
-                            add items to a shopping cart. Integrated interactive UI components,
-                            mobile-first design, and basic cart functionality using React state
-                            management.
-                        </p>
-
-                        <div className="project_control_panel">
-                            <Button
-                                text="Source Code"
-                                className="project_button"
-                            />
-
-                            <Button
-                                text="Live Demo"
-                                className="project_button"
-                            />
-                        </div>
-                    </div>
                 </div>
             </section>
             <Footer />
