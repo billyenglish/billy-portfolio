@@ -10,38 +10,21 @@
 /* Body Section */
 
 body {
-  border: 1px solid #000;
   font-family: 'Fuzzy Bubbles';
   font-size: 62.5%;
   min-height: 100vh;
 }
 
-/* Nav Section */
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 10;
-  height: 5rem;
-  padding: 2rem;
-}
-
-.nav_menu_button {
-  border: none;
-  background-color: transparent;
-}
-
 /* Main Section */
 
 section {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
 }
 
-#homepage_section {
+#homepage_section,
+.main_section {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -88,6 +71,11 @@ button:hover {
   font-weight: 500;
 }
 
+.homepage_button:hover {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
 .section_content {
   display: flex;
   justify-content: center;
@@ -97,6 +85,8 @@ button:hover {
 .section_title {
   font-size: 2rem;
   font-weight: 400;
+  text-decoration: underline;
+  text-underline-offset: 6px;
 }
 
 /* Footer Section */
