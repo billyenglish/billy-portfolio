@@ -13,6 +13,21 @@ body {
   font-family: 'Fuzzy Bubbles';
   font-size: 62.5%;
   min-height: 100vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),
+    url('./assets/images/cowboy_bebop_smoking.gif');
+  background-position: center;
+  background-size: cover;
+  color: #FFF;
+}
+
+button {
+  color: #FFF;
+
+}
+
+a {
+  color: #FFF;
 }
 
 /* Main Section */
