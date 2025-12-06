@@ -4,13 +4,17 @@
     gap: 3rem;
 }
 
+.skills_title {
+    text-align: center;
+}
+
 .skills_container {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 70vh;
     width: 100%;
-    column-gap: 5rem;
+    column-gap: 8rem;
 }
 
 .my_skills {
@@ -36,6 +40,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.skills_card:hover {
+    cursor: pointer;
 }
 
 .skills_icon {

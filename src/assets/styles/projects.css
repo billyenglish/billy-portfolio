@@ -1,54 +1,58 @@
 #projects_section {
     display: flex;
-    align-self: normal;
+    flex-direction: column;
+    align-items: center;
     justify-content: flex-start;
-    padding: 5rem 0 0 0;
-    gap: 4rem;
+    padding: 3rem 0 0 0;
+    gap: 2rem;
 }
 
 #project_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 70vh;
+    min-height: 70vh;
     width: 100%;
     place-items: center;
     place-content: start;
     column-gap: 1rem;
+    row-gap: 2rem;
+    padding: 1rem;
 }
 
 .project_card {
-    border: 1px solid #000;
+    border: 1px solid black;
     border-radius: .25rem;
     height: 20rem;
-    width: 32rem;
-    padding: 1.25rem;
+    width: min(30rem, 100%);
+    padding: 1rem 1.25rem;
     display: flex;
     flex-direction: column;
     gap: .75rem;
 }
 
 .card_title {
-    font-size: 1.35rem;
+    font-size: 1.25rem;
     font-weight: 400;
-    padding: .4rem 0;
+    padding: .5rem 0;
     text-decoration: underline;
     text-underline-offset: 8px;
 }
 
 .card_subtitle {
-    font-size: .9rem;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 1.25rem;
+    line-height: 1.4rem;
 }
 
 .tech_stack {
     font-size: 1rem;
     font-weight: 500;
     text-decoration: underline;
+    padding: 1rem 0;
 }
 
 .description {
-    font-size: 1rem;
+    font-size: .7rem;
     font-weight: 500;
 }
 
@@ -61,13 +65,15 @@
 .project_control_panel {
     display: flex;
     justify-content: space-between;
+    margin-top: auto;
 }
 
 .project_button {
     border: none;
     background-color: transparent;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 500;
     text-decoration: underline;
     text-underline-offset: 4px;
+    cursor: pointer;
 }

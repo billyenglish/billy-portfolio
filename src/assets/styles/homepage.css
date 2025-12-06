@@ -1,0 +1,52 @@
+#homepage_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#homepage_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1.75rem;
+    width: 70%;
+}
+
+#homepage_title {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+#homepage_subtitle {
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+  line-height: 2rem;
+}
+
+#homepage_controls {
+  display: flex;
+  gap: 2rem;
+}
+
+button {
+  font-family: "Fuzzy Bubbles";
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.homepage_button {
+  background: transparent;
+  border: none;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.homepage_button:hover {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
