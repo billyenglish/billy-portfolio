@@ -9,7 +9,7 @@ const Projects = () => {
         <>
             <Nav />
             <section id="projects_section" className="main_section">
-                <h3 className="section_title">
+                <h3 className="section_title project_title">
                     My Projects
                 </h3>
 
@@ -17,7 +17,7 @@ const Projects = () => {
 
                     <ProjectCards
                         title="Calculator"
-                        subtitle="Simple Calculator"
+                        subtitle="HTML, CSS, JavaScript"
                         description="
                             Calculator Application is a web-based tool built with HTML, CSS,
                             and JavaScript that allows users to perform basic arithmetic operations
@@ -28,8 +28,8 @@ const Projects = () => {
 
                     <ProjectCards
                         title="Resume Builder"
-                        subtitle=""
-                        description="
+                        subtitle="React, HTML, CSS, JavaScript, and TailwindCSS"
+                        description="hkh
                         "
                     />
 
