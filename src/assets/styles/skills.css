@@ -1,7 +1,7 @@
 #skills_section {
-    justify-content: flex-start;
-    padding: 4rem 0 0 0;
-    gap: 3rem;
+    border: 1px solid #000;
+    padding: 2rem 0 0 0;
+    gap: 1rem;
 }
 
 .skills_title {

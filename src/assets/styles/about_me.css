@@ -1,9 +1,3 @@
-#about_me_section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 #about_me_section_content {
     display: grid;
     grid-template-columns: 1fr 1fr;

@@ -4,7 +4,9 @@ nav {
     align-items: center;
     height: 5rem;
     padding: 2.5rem;
-    z-index: 5;
+    z-index: 25;
+    position: absolute;
+    width: 100%;
 }
 
 #nav_logo {
@@ -33,10 +35,48 @@ nav {
     display: flex;
 }
 
-#nav_desktop_menu_open, #nav_desktop_menu {
+#nav_menu_open {
+    display: flex;
+}
+
+#nav_menu_close {
     display: none;
 }
 
-#nav_desktop_list {
-    display: none;
+.nav_menu_list {
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: -20;
+    top: 0;
+    left: 0;
+    background-color: #FFF;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.list_item a {
+    display: flex;
+    font-size: 1.8rem;
+    font-weight: 500;
+    gap: .75rem;
+    align-items: end;
+}
+
+.nav_menu_sub_list {
+    display: flex;
+    gap: 2rem;
+}
+
+.list_sub_item {
+    font-size: 1.25rem;
+}
+
+.nav_pos {
+    font-size: 1.1rem;
+    font-weight: 400;
 }
