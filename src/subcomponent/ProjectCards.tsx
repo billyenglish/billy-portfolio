@@ -18,7 +18,7 @@ const ProjectCard: FC<CardProps> = ({ title, subtitle, description, }) => {
             <h5 className="card_subtitle">
                 <span className="tech_stack">
                     Tech Stack:
-                </span> Tech Stack: {subtitle}
+                </span> {subtitle}
             </h5>
 
             <p className="project_description">
