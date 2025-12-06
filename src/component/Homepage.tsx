@@ -3,6 +3,7 @@ import Footer from "./Footer";
 import Button from "../subcomponent/Button";
 import currentRoute from "../subcomponent/CurrentNavigation";
 import "../assets/media_queries/homepage_query.css";
+import "../assets/styles/homepage.css"
 
 const Homepage = () => {
 

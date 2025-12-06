@@ -1,6 +1,7 @@
 import Nav from "./Nav";
 import Footer from "./Footer";
 import "../assets/styles/skills.css";
+import "../assets/media_queries/skills_query.css"
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaSass, FaBootstrap, FaNodeJs, FaPython, FaJava, FaGithub } from "react-icons/fa";
 import { SiTypescript, SiTailwindcss, SiExpress, SiMongodb, SiGraphql, SiMongoose, SiC, SiVite, SiWebpack, SiJest } from "react-icons/si";
 import { RiNextjsFill, RiTerminalBoxFill } from "react-icons/ri";
@@ -148,7 +149,7 @@ const Skills = () => {
         <>
             <Nav />
             <section id="skills_section" className="main_section">
-                <h3 className="section_title">
+                <h3 className="section_title skills_title">
                     Skills
                 </h3>
 

@@ -6,6 +6,7 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 import Button from "../subcomponent/Button";
 import { Link } from "react-router-dom";
 import "../assets/styles/nav.css";
+import "../assets/media_queries/nav_query.css"
 
 const Nav = () => {
 
@@ -68,15 +69,15 @@ const Nav = () => {
                 <ul className="nav_list_menu_buttons">
                     <li>
                         <Button
-                            icon={ navMenu ? <CgClose size={30} /> : <CgMenuGridO size={30} /> }
+                            icon={ navMenu ? <CgClose /> : <CgMenuGridO /> }
                             className="nav_menu_button"
                             onClick={handleNavMenu}
                         />
                     </li>
                     <li>
                         <Button
-                            icon={ themeMode ? <FaMoon size={22} /> : <IoSunny size={30} /> }
-                            className="nav_menu_button"
+                            icon={ themeMode ? <FaMoon /> : <IoSunny /> }
+                            className="nav_menu_button theme"
                             onClick={handleThemeMode}
                         />
                     </li>

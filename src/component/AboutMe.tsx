@@ -2,6 +2,7 @@ import "../assets/styles/about_me.css";
 import Nav from "./Nav";
 import Footer from "./Footer";
 import aboutMeImage from "../assets/images/billyenglish.jpeg";
+import "../assets/media_queries/about_query.css"
 
 const AboutMe = () => {
 
@@ -12,15 +13,18 @@ const AboutMe = () => {
                 id="about_me_section"
                 className="section_content"
             >
-                <h3 className="section_title">
+
+                <h3 className="section_title about_title">
                     About Me
                 </h3>
+
                 <div id="about_me_section_content">
+
                     <article id="about_me_image_content">
-                        <img
-                            src={aboutMeImage}
-                            id="about_me_image"
-                        />
+                            <img
+                                src={aboutMeImage}
+                                id="about_me_image"
+                            />
                     </article>
                     <article id="about_me_intro">
                         <h4 className="article_title">

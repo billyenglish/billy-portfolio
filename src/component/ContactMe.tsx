@@ -1,6 +1,7 @@
 import Nav from "./Nav";
 import Footer from "./Footer";
 import "../assets/styles/contact_me.css";
+import "../assets/media_queries/contact_query.css"
 import Button from "../subcomponent/Button";
 
 const ContactMe = () => {
@@ -9,7 +10,7 @@ const ContactMe = () => {
         <>
             <Nav />
             <section id="contact_me_section" className="main_section">
-                <h3 className="section_title">Contact Me</h3>
+                <h3 className="section_title contact_title">Contact Me</h3>
 
                 <div id="form_container">
                     <div>

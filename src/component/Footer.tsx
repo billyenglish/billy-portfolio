@@ -1,4 +1,6 @@
-import "../assets/media_queries/footer_query.css";
+import "../assets/styles/homepage.css"
+import "../assets/styles/footer.css"
+import "../assets/media_queries/footer_query.css"
 
 const Footer = () => {
 
