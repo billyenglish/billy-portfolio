@@ -9,3 +9,15 @@
     }
 
 }
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+
+    #footer_paragraph {
+        font-size: .8rem;
+    }
+
+    #copyright {
+        font-size: 1.25rem;
+    }
+
+}
