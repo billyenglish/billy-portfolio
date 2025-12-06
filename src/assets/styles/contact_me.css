@@ -21,7 +21,7 @@
 }
 
 input {
-    font-family: 'Fuzzy Bubbles';
+    font-family: 'Fuzzy Bubbles', 'Open Sans';
     height: 3rem;
     width: 32rem;
 }
@@ -42,7 +42,7 @@ input::placeholder {
 
 textarea {
     font-size: 1.5rem;
-    height: 20rem;
+    height: 18rem;
     width: 32rem;
     resize: none;
     scroll-behavior: smooth;
