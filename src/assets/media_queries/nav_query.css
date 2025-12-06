@@ -1,0 +1,33 @@
+@media screen and (max-width: 320px) {
+
+    nav {
+        height: 4rem;
+        padding: 1.5rem 1rem;
+    }
+
+    #nav_logo {
+        font-size: 1.25rem;
+    }
+
+    .nav_list_menu_buttons {
+        gap: .5rem;
+    }
+
+    .nav_menu_button {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+
+    nav {
+        padding: 2rem 1.5rem;
+        height: 4rem;
+    }
+
+    #nav_logo {
+        font-size: 1.35rem;
+    }
+
+}

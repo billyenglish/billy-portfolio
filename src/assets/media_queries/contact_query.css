@@ -1,0 +1,12 @@
+@media screen and (min-width: 481px) and (max-width: 640px) {
+
+    input[type=text] {
+        width: 28rem;
+    }
+
+    textarea {
+        height: 20rem;
+        width: 28rem;
+    }
+
+}
