@@ -22,34 +22,39 @@ const Nav = () => {
     }
 
     type NavType = {
+        navPos: string;
         navItem: string;
         navLink: string;
         id: number;
     }
 
     const navMenuItem: NavType[] = [
-        {
-            navItem: "00 Home",
+        {   navPos: "00",
+            navItem: "Home",
             navLink: "/",
             id: 0
         },
         {
-            navItem: "01 About Me",
+            navPos: "01",
+            navItem: "About Me",
             navLink: "/about_me",
             id: 1
         },
         {
-            navItem: "02 Projects",
+            navPos: "02",
+            navItem: "Projects",
             navLink: "/projects",
             id: 2
         },
         {
-            navItem: "03 Skills",
+            navPos: "03",
+            navItem: "Skills",
             navLink: "/skills",
             id: 3
         },
         {
-            navItem: "04 Contact Me",
+            navPos: "04",
+            navItem: "Contact Me",
             navLink: "/contact_me",
             id: 4
         }
@@ -84,42 +89,41 @@ const Nav = () => {
                 </ul>
             </div>
 
-            <div id={ navMenu ? "nav_desktop_menu_open" : "nav_desktop_menu" }>
-                <ul id="nav_desktop_list">
-                    {navMenuItem.map((currentItems) => (
-                        <li
-                            className="list_item"
-                            key={currentItems.id}>
-                                <Link to={currentItems.navLink}>
-                                    {currentItems.navItem}
-                                </Link>
-                        </li>
-                    ))}
-                    <ul className="nav_desktop_sub_list">
-                        <li className="list_sub_item">
-                            <a
-                                className="list_sub_item_link"
-                                href="https://www.linkedin.com/in/billyenglish">
-                                <span>
-                                    <MdOutlineArrowOutward />
-                                </span>
-                                LinkedIn
-                            </a>
-                        </li>
-                        <li className="list_sub_item">
-                            <a
-                                className="list_sub_item_link"
-                                href="https://github.com/billyenglish"
-                            >
-                                <span>
-                                    <MdOutlineArrowOutward />
-                                </span>
-                                Github
-                            </a>
-                        </li>
-                    </ul>
+            <ul id={ navMenu ? "nav_menu_open" : "nav_menu_close" } className="nav_menu_list">
+                {navMenuItem.map((currentItems) => (
+                    <li
+                        className="list_item"
+                        key={currentItems.id}>
+                            <Link to={currentItems.navLink}>
+                                <span className="nav_pos">{currentItems.navPos}</span>
+                                {currentItems.navItem}
+                            </Link>
+                    </li>
+                ))}
+                <ul className="nav_menu_sub_list">
+                    <li className="list_sub_item">
+                        <a
+                            className="list_sub_item_link"
+                            href="https://www.linkedin.com/in/billyenglish">
+                            <span>
+                                <MdOutlineArrowOutward />
+                            </span>
+                            LinkedIn
+                        </a>
+                    </li>
+                    <li className="list_sub_item">
+                        <a
+                            className="list_sub_item_link"
+                            href="https://github.com/billyenglish"
+                        >
+                            <span>
+                                <MdOutlineArrowOutward />
+                            </span>
+                            Github
+                        </a>
+                    </li>
                 </ul>
-            </div>
+            </ul>
         </nav>
     );
 };
