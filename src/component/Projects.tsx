@@ -2,6 +2,7 @@ import Nav from "./Nav";
 import Footer from "./Footer";
 import ProjectCards from "../subcomponent/ProjectCards";
 import "../assets/styles/projects.css";
+import "../assets/media_queries/projects_query.css"
 
 const Projects = () => {
 
@@ -16,20 +17,23 @@ const Projects = () => {
                 <div id="project_container">
 
                     <ProjectCards
-                        title="Calculator"
-                        subtitle="HTML, CSS, JavaScript"
+                        title="Little Lemon"
+                        subtitle="React, JavaScript, HTML5, CSS3"
                         description="
-                            Calculator Application is a web-based tool built with HTML, CSS,
-                            and JavaScript that allows users to perform basic arithmetic operations
-                            like addition, subtraction, multiplication, and division. It features a
-                            user-friendly interface with interactive buttons and dynamic calculations.
+                            A front-end restaurant website focused on responsive UI, accessibility,
+                            and interactive components. Users can browse menu sections, explore the
+                            brand story, and navigate a clean, modern layout optimized for all screen
+                            sizes.
                         "
                     />
 
                     <ProjectCards
                         title="Resume Builder"
-                        subtitle="React, HTML, CSS, JavaScript, and TailwindCSS"
-                        description="hkh
+                        subtitle="React, HTML, JavaScript, and TailwindCSS"
+                        description="
+                            An interactive resume builder that lets users generate a professional resume
+                            with real-time preview. The project uses reusable React components, efficient
+                            state management, and TailwindCSS.
                         "
                     />
 
