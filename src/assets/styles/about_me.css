@@ -1,7 +1,11 @@
+.about_title {
+    padding: 2rem 0 0 0;
+}
+
 #about_me_section_content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    min-height: 80vh;
+    min-height: 70vh;
 }
 
 #about_me_image_content {
