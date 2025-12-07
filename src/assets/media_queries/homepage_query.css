@@ -5,6 +5,7 @@
     }
 
     #homepage_title {
+        text-align: center;
         font-size: 2rem;
         font-weight: 400;
     }
@@ -20,4 +21,24 @@
         width: auto;
     }
 
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+
+    #homepage_content {
+        gap: 3rem;
+    }
+
+    #homepage_title {
+        font-size: 2.3rem;
+    }
+
+    #homepage_subtitle {
+        font-size: .9rem;
+    }
+
+    .homepage_button {
+        font-size: .9rem;
+    }
+    
 }
