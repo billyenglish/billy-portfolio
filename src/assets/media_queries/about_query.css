@@ -1,7 +1,7 @@
 @media screen and (max-width: 320px) {
 
     #about_me_section {
-        padding: 3rem 0;
+        padding: 8rem 0;
     }
 
     #about_me_section_content {
@@ -34,7 +34,7 @@
 @media screen and (min-width: 321px) and (max-width: 768px) {
 
     #about_me_section {
-        padding: 3rem 0;
+        padding: 9rem 0;
     }
 
     #about_me_section_content {
@@ -67,7 +67,7 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
     #about_me_section {
-        padding: 3rem 0;
+        padding: 10rem 0;
     }
 
     #about_me_section_content {
@@ -84,15 +84,15 @@
     }
 
     .article_title {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         font-weight: 600;
         line-height: 2rem;
     }
 
     .about_me_paragraph {
-        font-size: 1rem;
+        font-size: 1.25rem;
         text-align: center;
-        line-height: 1.5rem;
+        line-height: 1.75rem;
     }
 
 }
