@@ -10,10 +10,21 @@ nav {
 }
 
 #nav_logo a {
-    font-size: 1.75rem;
+    position: relative;
+    font-size: 1.5rem;
     font-weight: 400;
     text-decoration: underline;
-    text-underline-offset: .5rem;
+}
+
+#nav_logo a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0%;
+    height: 2px;
+    background-color: currentColor;
+    transition: width 0.3s ease;
 }
 
 .nav_list_menu_buttons {
