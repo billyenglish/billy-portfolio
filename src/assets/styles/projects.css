@@ -4,7 +4,11 @@
     align-items: center;
     justify-content: center;
     padding: 3rem 0 0 0;
-    gap: 2rem;
+    gap: 1rem;
+}
+
+.project_title {
+    padding: 1rem 0;
 }
 
 #project_container {
@@ -22,17 +26,17 @@
 .project_card {
     border: 1px solid black;
     border-radius: .25rem;
-    height: 20rem;
+    height: 18rem;
     width: min(30rem, 100%);
-    padding: 1rem 1.25rem;
+    padding: .5rem 1rem;
     display: flex;
     flex-direction: column;
     gap: .75rem;
 }
 
 .card_title {
-    font-size: 1.25rem;
-    font-weight: 400;
+    font-size: 1.2rem;
+    font-weight: 600;
     padding: .5rem 0;
     text-decoration: underline;
     text-underline-offset: 8px;
@@ -40,8 +44,9 @@
 
 .card_subtitle {
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.4rem;
+    padding: .25rem 0;
 }
 
 .tech_stack {
@@ -52,27 +57,29 @@
 }
 
 .description {
-    font-size: .7rem;
+    font-size: .6rem;
     font-weight: 500;
+    padding: .1rem 0;
 }
 
 .project_description {
     font-size: 1rem;
     font-weight: 500;
-    line-height: 1.5rem;
+    line-height: 1.6rem;
 }
 
 .project_control_panel {
     display: flex;
     justify-content: space-between;
     margin-top: auto;
+    padding: 0 0 .5rem 0;
 }
 
 .project_button {
     border: none;
     background-color: transparent;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
     text-decoration: underline;
     text-underline-offset: 4px;
     cursor: pointer;
