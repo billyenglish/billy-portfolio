@@ -1,8 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Karla:ital,wght@0,200..800;1,200..800&family=Matangi:wght@300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --primary-color: #101010;
-    --secondary-color: #FFFFFF;
+    --primary-font-family: 'Fuzzy Bubbles';
+    --secondary-font-family-1: 'Open Sans';
+    --secondary-font-family-2: 'Matangi';
+    --secondary-font-family-3: 'Karla';
+
+    --primary-font-size: 2.5rem;
+    --secondary-font-size-1: 1.75rem;
+    --secondary-font-size-2: 1.5rem;
+    --secondary-font-size-3: 1.25rem;
+
+    --font-weight-600: 600;
+    --font-weight-500: 500;
+    --font-weight-400: 400;
+
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 *, *::before, *::after {
@@ -14,24 +30,24 @@
 }
 
 body {
-    font-family: 'Fuzzy Bubbles', 'Open Sans', 'Karla';
+    font-family: var(--primary-font-family), 'Open Sans', 'Karla';
     font-size: 62.5%;
     min-height: 100vh;
     width: 100%;
 }
 
 section {
+    border: 1px solid #000;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    z-index: -5;
 }
 
 .section_title {
-    font-size: 1.75rem;
-    font-weight: 500;
+    font-size: var(--secondary-font-size-1);
+    font-weight: var(--font-weight-400);
 }
 
 button {
@@ -39,6 +55,10 @@ button {
 }
 
 button:hover, .btn:hover {
-  transform: translateY(-3px) scale(1.03);
-  box-shadow: 0 10px 25px transparent;
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 10px 25px transparent;
+}
+
+footer {
+    height: 3vh;
 }
