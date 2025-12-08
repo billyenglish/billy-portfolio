@@ -4,7 +4,7 @@ nav {
     align-items: center;
     height: 5rem;
     padding: 2.5rem;
-    z-index: 25;
+    z-index: 0;
     position: fixed;
     width: 100%;
 }
@@ -59,7 +59,7 @@ nav {
     display: flex;
     flex-direction: column;
     position: absolute;
-    z-index: -20;
+    z-index: -5;
     top: 0;
     left: 100%;
     background-color: #FFF;
