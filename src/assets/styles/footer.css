@@ -7,7 +7,7 @@ footer {
     justify-content: center;
     align-items: center;
     z-index: 10;
-    position: absolute;
+    position: fixed;
 }
 
 #footer_paragraph {
