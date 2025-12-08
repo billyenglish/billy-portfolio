@@ -7,18 +7,16 @@ import Button from "../subcomponent/Button";
 import { Link } from "react-router-dom";
 import "../assets/styles/nav.css";
 import "../assets/media_queries/nav_query.css"
+import { useContext } from "react";
+import { ThemeContext } from "../subcomponent/ThemeContext"
 
 const Nav = () => {
 
     const [navMenu, setNavMenu] = useState(false);
-    const [themeMode, setThemeMode] = useState(true);
+    const { theme, toggleTheme } = useContext(ThemeContext)
 
     const handleNavMenu = () => {
         setNavMenu(prevNav => !prevNav);
-    }
-
-    const handleThemeMode = () => {
-        setThemeMode(prevTheme => !prevTheme);
     }
 
     type NavType = {
@@ -81,9 +79,9 @@ const Nav = () => {
                     </li>
                     <li>
                         <Button
-                            icon={ themeMode ? <FaMoon /> : <IoSunny /> }
+                            icon={ theme === "dark" ? <FaMoon /> : <IoSunny /> }
                             className="nav_menu_button theme"
-                            onClick={handleThemeMode}
+                            onClick={toggleTheme}
                         />
                     </li>
                 </ul>
