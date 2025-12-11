@@ -1,16 +1,24 @@
 @media screen and (min-width: 320px) and (max-width: 480px) {
 
+    #contact_me_section {
+        padding: 6rem 0 4rem 0;
+    }
+
     .contact_title {
-        font-size: 1.5rem;
+        font-size: 1.65rem;
     }
 
     input[type=text] {
-        width: 20rem;
+        width: 18rem;
     }
 
     textarea {
         height: 12rem;
-        width: 20rem;
+        width: 18rem;
+    }
+
+    .form_button {
+        font-size: var(--secondary-font-size-4);
     }
 
 }
