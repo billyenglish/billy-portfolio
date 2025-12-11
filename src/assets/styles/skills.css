@@ -1,9 +1,9 @@
 #skills_section {
-    padding: 2rem 0 0 0;
-    gap: 1rem;
+    padding: 5rem 0 3rem 0;
 }
 
 .skills_title {
+    padding: 2rem 0 1rem 0;
     text-align: center;
 }
 
