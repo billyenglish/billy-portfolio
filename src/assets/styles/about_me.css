@@ -28,7 +28,7 @@
 }
 
 .article_title {
-    font-size: 1.5rem;
+    font-size: var(--secondary-font-family-2);
     text-align: center;
     padding: 1.5rem 3rem;
 }
@@ -43,5 +43,5 @@
 }
 
 .about_me_paragraph {
-    font-size: 1.1rem;
+    font-size: var(--paragraph-font-size-1);
 }
