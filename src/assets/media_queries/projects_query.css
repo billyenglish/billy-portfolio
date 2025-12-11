@@ -2,12 +2,13 @@
 
     .project_title {
         font-size: 1.4rem;
-        padding: 6rem 0 4rem 0;
+        padding: 6rem 0 2rem 0;
     }
 
     #project_container {
         grid-template-columns: 1fr;
-        row-gap: 6rem;
+        row-gap: 3rem;
+        padding-bottom: 5rem;
     }
 
     .project_card {
