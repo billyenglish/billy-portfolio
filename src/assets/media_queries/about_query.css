@@ -1,7 +1,7 @@
 @media screen and (max-width: 320px) {
 
     #about_me_section {
-        padding: 8rem 0;
+        padding: 6rem 0;
     }
 
     #about_me_section_content {
@@ -24,7 +24,7 @@
     }
 
     .about_me_paragraph {
-        font-size: 1rem;
+        font-size: 1.1rem;
         text-align: center;
         line-height: 1.5rem;
     }
@@ -34,7 +34,7 @@
 @media screen and (min-width: 321px) and (max-width: 768px) {
 
     #about_me_section {
-        padding: 9rem 0;
+        padding: 8rem 0;
     }
 
     #about_me_section_content {
