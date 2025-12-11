@@ -11,13 +11,13 @@
     }
 
     #homepage_subtitle {
-        font-size: 1rem;
+        font-size: .9rem;
         font-weight: 400;
     }
 
     .homepage_button {
-        font-size: 1rem;
-        font-weight: 400;
+        font-size: .8rem;
+        font-weight: var(--font-weight-500);
         width: auto;
     }
 
@@ -40,5 +40,5 @@
     .homepage_button {
         font-size: .9rem;
     }
-    
+
 }
