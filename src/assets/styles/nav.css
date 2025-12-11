@@ -70,8 +70,8 @@ nav {
     align-items: center;
     gap: 2rem;
     transition: left 0.35s ease;
-    background-color: var(--primary-background-color);
-    opacity: .95;
+    background-color: var(--secondary-color);
+    opacity: .9;
 }
 
 .list_item a {
