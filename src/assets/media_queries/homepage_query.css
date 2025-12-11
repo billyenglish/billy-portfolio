@@ -1,7 +1,11 @@
 @media screen and (max-width: 320px) {
 
+    #homepage_section {
+        padding-top: 3rem;
+    }
+
     #homepage_content {
-        gap: 2.5rem;
+        gap: 1.75rem;
     }
 
     #homepage_title {
@@ -13,6 +17,7 @@
     #homepage_subtitle {
         font-size: .9rem;
         font-weight: 400;
+        line-height: 2rem;
     }
 
     .homepage_button {
@@ -26,19 +31,42 @@
 @media screen and (min-width: 321px) and (max-width: 480px) {
 
     #homepage_content {
-        gap: 3rem;
+        padding-top: 3rem;
+        gap: 2rem;
     }
 
     #homepage_title {
-        font-size: 2.3rem;
+        font-size: 2.2rem;
     }
 
     #homepage_subtitle {
-        font-size: .9rem;
+        font-size: 1rem;
+        line-height: 2rem;
     }
 
     .homepage_button {
         font-size: .9rem;
     }
 
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    #homepage_content {
+        padding-top: 3rem;
+        gap: 2rem;
+    }
+
+    #homepage_title {
+        font-size: 2.2rem;
+    }
+
+    #homepage_subtitle {
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+
+    .homepage_button {
+        font-size: .9rem;
+    }
 }
