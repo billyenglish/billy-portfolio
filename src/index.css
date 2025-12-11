@@ -6,21 +6,27 @@
     --secondary-font-family-2: 'Matangi';
     --secondary-font-family-3: 'Karla';
 
-    --primary-font-size: 2.5rem;
+    --primary-font-size: 3rem;
     --secondary-font-size-1: 1.75rem;
     --secondary-font-size-2: 1.5rem;
     --secondary-font-size-3: 1.25rem;
     --secondary-font-size-4: 1.1rem;
 
+    --paragraph-font-size: 1.1rem;
+
     --font-weight-600: 600;
     --font-weight-500: 500;
     --font-weight-400: 400;
+    --font-weight-300: 300;
+    --font-weight-200: 200;
+
+    --section-height: calc(100vh - var(--footer-height));
+
+    --footer-height: 3rem;
 
 }
 
 /* Dark Mode Theme */
-
-body
 
 /* Html Section */
 
@@ -48,7 +54,7 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: var(--section-height);
 }
 
 .section_title {
@@ -57,6 +63,7 @@ section {
 }
 
 button {
+    font-family: var(--primary-font-family), var(--secondary-font-family-1), var(--secondary-font-family-2);
     transition: all 0.25s ease-in-out;
 }
 
@@ -66,5 +73,5 @@ button:hover, .btn:hover {
 }
 
 footer {
-    height: 3vh;
+    height: var(--footer-height);
 }
