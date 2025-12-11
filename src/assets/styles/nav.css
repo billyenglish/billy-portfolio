@@ -11,8 +11,8 @@ nav {
 
 #nav_logo a {
     position: relative;
-    font-size: 1.5rem;
-    font-weight: 400;
+    font-size: var(--secondary-font-size-3);
+    font-weight: var(--font-weigth-500);
     text-decoration: underline;
 }
 
@@ -39,7 +39,7 @@ nav {
     align-items: center;
     justify-content: center;
     background-color: transparent;
-    font-size: 1.75rem;
+    font-size: var(--secondary-font-size-1);
 }
 
 .nav_list_menu_buttons {
@@ -85,10 +85,10 @@ nav {
 }
 
 .list_sub_item {
-    font-size: 1.25rem;
+    font-size: var(--secondary-font-size-3);
 }
 
 .nav_pos {
-    font-size: 1.1rem;
+    font-size: var(--secondary-font-size-4);
     font-weight: 400;
 }
