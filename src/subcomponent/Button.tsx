@@ -13,7 +13,7 @@ const Button = ({
     icon,
     onClick
 }: ButtonProps) => {
-    
+
     return (
         <button
             type="button"
