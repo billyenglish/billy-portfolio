@@ -47,8 +47,6 @@ const ProjectCard: FC<CardProps> = ({ title, subtitle, description, }) => {
                             className="project_button"
                         />
                     ))
-
-
                 }
 
                 {
