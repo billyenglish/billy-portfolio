@@ -5,9 +5,9 @@ type CardProps = {
     title: string;
     subtitle: string;
     description: string;
-    className: string;
-    sourceCode: string;
-    href: string;
+    className?: string;
+    sourceCode?: string;
+    href?: string;
 }
 
 const SourceCodeLinks = [
@@ -63,4 +63,4 @@ const ProjectCard: FC<CardProps> = ({ title, subtitle, description, }) => {
     );
 };
 
-export default ProjectCard
+export default ProjectCard;
