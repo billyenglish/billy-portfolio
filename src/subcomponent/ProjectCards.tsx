@@ -44,7 +44,7 @@ const ProjectCard: FC<CardProps> = ({ title, subtitle, description, }) => {
                         <CardButtonLinks
                             linkText="Source Code"
                             href={currentLinks.href}
-                            className="project_button"
+                            className="project_button project_links"
                         />
                     ))
                 }
