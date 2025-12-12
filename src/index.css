@@ -84,6 +84,9 @@ section {
 .section_title {
     font-size: var(--secondary-font-size-1);
     font-weight: var(--font-weight-400);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
 }
 
 button {
@@ -99,4 +102,13 @@ button:hover, .btn:hover {
 
 footer {
     height: var(--footer-height);
+}
+
+/* Animation Functions */
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
