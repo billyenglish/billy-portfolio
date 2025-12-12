@@ -91,4 +91,6 @@
     cursor: pointer;
 }
 
-
+.project_button {
+    color: var(--primary-color);
+}
