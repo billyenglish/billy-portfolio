@@ -53,6 +53,10 @@ textarea {
     color: #000;
 }
 
+input, textarea {
+  transition: all 0.3s ease;
+}
+
 textarea::placeholder {
     font-family: var(--primary-font-family), var(--secondary-font-family-1), var(--secondary-font-family-3);
     font-size: var(--secondary-font-size-2);
