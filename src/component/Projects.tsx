@@ -30,6 +30,21 @@ const project: Project[] = [
         demoLink: [
             { id: 0, linkText: "Live Demo", href: "https://billyenglish.github.io/little-lemon/" }
         ]
+    },
+    {
+        id: 1,
+        title: "Resume Builder",
+        subtitle: "React, JavaScript, HTML5, TailwindCSS",
+        description: `
+            Created a React resume builder web app that streamlines resume creation with live previews,
+            template customization, and PDF downloads, emphasizing usability and responsive design.
+        `,
+        sourceLinks: [
+            { id: 0, linkText: "Source Code", href: "https://github.com/billyenglish/resume-builder" }
+        ],
+        demoLink: [
+            { id: 0, linkText: "Live Demo", href: "https://buildyourresumeapp.netlify.app/" },
+        ]
     }
 ]
 
