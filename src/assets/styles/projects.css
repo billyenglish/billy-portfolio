@@ -33,6 +33,7 @@
     flex-direction: column;
     gap: .75rem;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border-color: var(--primary-color);
 }
 
 .project_card:hover {
