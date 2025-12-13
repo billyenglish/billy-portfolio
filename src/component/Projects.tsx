@@ -4,6 +4,35 @@ import ProjectCards from "../subcomponent/ProjectCards";
 import "../assets/styles/projects.css";
 import "../assets/media_queries/projects_query.css"
 
+type Project = {
+    id: number;
+    title: string;
+    subtitle: string;
+    description: string;
+    sourceLinks: { id: number; linkText: string; href: string; }[];
+    demoLink: { id: number; linkText: string; href: string }[];
+}
+
+const project: Project[] = [
+    {
+        id: 0,
+        title: "Little Lemon",
+        subtitle: "React, JavaScript, HTML5, CSS3",
+        description: `
+            A front-end restaurant website focused on responsive UI, accessibility,
+            and interactive components. Users can browse menu sections, explore the
+            brand story, and navigate a clean, modern layout optimized for all screen
+            sizes.
+        `,
+        sourceLinks: [
+            { id: 0, linkText: "Source Code", href: "https://github.com/billyenglish/little-lemon" }
+        ],
+        demoLink: [
+            { id: 0, linkText: "Live Demo", href: "https://billyenglish.github.io/little-lemon/" }
+        ]
+    }
+]
+
 const Projects = () => {
 
     return (
@@ -16,26 +45,16 @@ const Projects = () => {
 
                 <div id="project_container">
 
-                    <ProjectCards
-                        title="Little Lemon"
-                        subtitle="React, JavaScript, HTML5, CSS3"
-                        description="
-                            A front-end restaurant website focused on responsive UI, accessibility,
-                            and interactive components. Users can browse menu sections, explore the
-                            brand story, and navigate a clean, modern layout optimized for all screen
-                            sizes.
-                        "
-                    />
-
-                    <ProjectCards
-                        title="Resume Builder"
-                        subtitle="React, HTML, JavaScript, and TailwindCSS"
-                        description="
-                            An interactive resume builder that lets users generate a professional resume
-                            with real-time preview. The project uses reusable React components, efficient
-                            state management, and TailwindCSS.
-                        "
-                    />
+                    {project.map((projects) => (
+                        <ProjectCards
+                            key={projects.id}
+                            title={projects.title}
+                            subtitle={projects.subtitle}
+                            description={projects.description}
+                            sourceLink={projects.sourceLinks}
+                            demoLink={projects.demoLink}
+                        />
+                    ))}
 
                 </div>
             </section>
