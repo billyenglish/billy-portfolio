@@ -1,24 +1,22 @@
 import CardButtonLinks from "./CardButtonLinks"
 import type { FC } from "react";
 
+type Link = {
+    id: number;
+    linkText: string;
+    href: string;
+}
+
 type CardProps = {
     title: string;
     subtitle: string;
     description: string;
+    sourceLink: Link[];
+    demoLink: Link[];
     className?: string;
-    sourceCode?: string;
-    href?: string;
 }
 
-const SourceCodeLinks = [
-    { linkText: 'Source Code', href: "/", id: 0 }
-];
-
-const LiveDemoLinks = [
-    { linkText: 'Live Code', href: "/", id: 0}
-]
-
-const ProjectCard: FC<CardProps> = ({ title, subtitle, description, }) => {
+const ProjectCard: FC<CardProps> = ({ title, subtitle, description, sourceLink, demoLink }) => {
 
     return (
         <div className="project_card">
@@ -39,25 +37,24 @@ const ProjectCard: FC<CardProps> = ({ title, subtitle, description, }) => {
             </p>
 
             <div className="project_control_panel">
-                {
-                    SourceCodeLinks.map((currentLinks) => (
-                        <CardButtonLinks
-                            linkText="Source Code"
-                            href={currentLinks.href}
-                            className="project_button project_links"
-                        />
-                    ))
-                }
+                {sourceLink.map(link => (
+                    <CardButtonLinks
+                        key={link.id}
+                        linkText={link.linkText}
+                        href={link.href}
+                        className="project_button project_links"
+                    />
+                ))}
 
-                {
-                    LiveDemoLinks.map((currentLinks) => (
-                        <CardButtonLinks
-                            linkText="Live Demo"
-                            href={currentLinks.href}
-                            className="project_button"
-                        />
-                    ))
-                }
+                {demoLink.map(link => (
+                    <CardButtonLinks
+                        key={link.id}
+                        linkText={link.linkText}
+                        href={link.href}
+                        className="project_button project_links"
+                    />
+                ))}
+            
             </div>
         </div>
     );
