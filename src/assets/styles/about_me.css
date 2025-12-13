@@ -44,8 +44,16 @@
     align-content: center;
     gap: 3rem;
     padding: 0 3rem;
+    line-height: 1.75rem;
 }
 
 .about_me_paragraph {
     font-size: var(--paragraph-font-size);
+}
+
+#linkedin a {
+    color: var(--primary-color);
+    text-decoration: underline;
+    text-underline-offset: .5rem;
+    text-decoration-thickness: 2px;
 }
